@@ -1,0 +1,30 @@
+.partnership {
+  padding: 40px 0;
+  background-color: #f3f0e9;
+
+  .partnershipWrapper {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partnershipInnerTitle {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  .list {
+    list-style-type: disc;
+    margin-left: 20px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

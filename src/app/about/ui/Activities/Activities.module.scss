@@ -1,0 +1,76 @@
+.activities {
+  padding: 80px 0;
+  background-color: #f3f0e9;
+
+  .activitiesTitle {
+    margin-bottom: 50px;
+    font-size: 40px;
+
+    .titleSpan {
+      display: inline;
+      margin-left: 0;
+      font-size: 40px;
+      color: var(--color-red);
+    }
+  }
+
+  .accordionWrapper {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #f3f0e9;
+    padding: 15px 70px;
+  }
+
+  .accordionBtn {
+    text-align-last: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .accordionDesc {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+  }
+
+  .accordionActive {
+    max-height: 200px;
+    padding: 20px 10px;
+    overflow-y: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .bottom {
+    .bottomWrapper {
+      margin: 50px 0 20px 0;
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bottomList {
+      margin: 30px 0;
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bottomItem {
+      gap: 30px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

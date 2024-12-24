@@ -1,0 +1,44 @@
+.area {
+  padding: 100px 0;
+  color: var(--color-white);
+  background: url("../../../../../public/areaBg.png") center/cover no-repeat;
+
+  .areaTitle {
+    margin-bottom: 50px;
+    color: var(--color-white);
+
+    & span {
+      margin-left: -200px;
+
+      & span {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .list {
+    gap: 120px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 5px;
+      background-color: var(--color-white);
+      left: 50%;
+      border-radius: 5px;
+    }
+  }
+
+  .item {
+    width: 100%;
+    max-width: 450px;
+    &:nth-child(even) {
+      align-self: flex-end;
+      text-align: left;
+    }
+  }
+}

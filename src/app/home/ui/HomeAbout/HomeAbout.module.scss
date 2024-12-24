@@ -1,0 +1,174 @@
+.about {
+  padding: 90px 0;
+  background-color: #f3f0e9;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    top: 35%;
+    z-index: 0;
+    background: url("../../../../../public/ornament.png") center/cover no-repeat;
+  }
+
+  &::after {
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  .acquaintance {
+    margin-bottom: 100px;
+
+    .acquaintanceTitle {
+      margin-bottom: 40px;
+    }
+
+    .acquaintanceWrapper {
+      gap: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .acquaintanceContent {
+      width: 100%;
+      max-width: 580px;
+    }
+
+    .acquaintanceInnerTitle {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .acquaintanceText {
+      margin-bottom: 20px;
+    }
+
+    .acquaintanceBtn {
+      font-family: var(--font-averia);
+      font-weight: 400;
+      font-size: 30px;
+      font-style: italic;
+      line-height: 1.3em;
+      letter-spacing: -0.03em;
+      color: var(--color-red);
+      padding: 20px 60px;
+      border: 1px solid var(--color-red);
+      border-radius: 20px;
+    }
+
+    .acquaintanceImagesWrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      width: 440px;
+      position: relative;
+      gap: 20px;
+    }
+
+    .bigImg {
+      grid-column: 1 / 4; /* От 1 до 3 колонки */
+      grid-row: 1 / 2; /* На первой строке */
+      width: 100%;
+      height: auto;
+    }
+
+    .littleImgFirst {
+      grid-column: 1 / 2; /* От 1 до 2 колонки */
+      grid-row: 2 / 3; /* На второй строке */
+      width: 160px;
+      height: auto;
+    }
+
+    .littleImgSecond {
+      grid-column: 2 / 3; /* От 2 до 3 колонки */
+      grid-row: 2 / 3; /* На второй строке */
+      width: 160px;
+      height: auto;
+    }
+
+    .littleImgLong {
+      position: absolute; /* Абсолютное позиционирование */
+      bottom: -40px;
+      left: calc(100% - 120px); /* Смещение в правый край, с учетом ширины */
+      width: 120px; /* Ширина картинки */
+      height: auto;
+    }
+  }
+
+  .partners {
+    .partnersList {
+      gap: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .partnersText {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 1.3em;
+      max-width: 600px;
+    }
+
+    .partnersImagesWrapper {
+      position: relative;
+      width: 100%;
+      max-width: 460px;
+    }
+
+    .partnersBigImg {
+      width: 320px;
+      height: 450px;
+      overflow: hidden;
+      margin: 0 auto;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .partnersFirst,
+    .partnersSecond,
+    .partnersThird {
+      position: absolute;
+      overflow: hidden;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .partnersFirst {
+      left: 0;
+      bottom: 15px;
+      width: 140px;
+      height: 185px;
+    }
+
+    .partnersSecond {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 155px;
+      height: 120px;
+    }
+
+    .partnersThird {
+      right: 0;
+      bottom: 15px;
+      width: 140px;
+      height: 185px;
+    }
+  }
+}

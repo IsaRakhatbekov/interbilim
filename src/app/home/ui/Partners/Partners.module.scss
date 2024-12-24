@@ -1,0 +1,15 @@
+.partners {
+  padding: 150px 0;
+  // background-color: #f3f0e9;
+
+  .partnersTitle {
+    margin-bottom: 40px;
+  }
+
+  .list {
+    gap: 50px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

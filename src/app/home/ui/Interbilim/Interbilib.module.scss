@@ -1,0 +1,161 @@
+.interbilim {
+  color: var(--color-white);
+  background-color: #f3f0e9;
+  background: url("../../../../../public/interbilim/interbilimBg.png") no-repeat
+    top/cover;
+  position: relative;
+
+  .values {
+    .valuesTitle {
+      margin-bottom: 40px;
+      & span {
+        font-family: var(--font-inter);
+        font-weight: 700;
+        font-size: 68px;
+        line-height: 1em;
+        letter-spacing: -0.01em;
+        color: var(--color-red);
+        & span {
+          margin-left: 345px;
+        }
+      }
+    }
+
+    .valuesList {
+      gap: 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .valuesItem {
+      padding: 22px 20px;
+      border-radius: 2px;
+      background-color: #f3f0e9;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .valuesImgWrapper {
+      width: 260px;
+      height: 280px;
+      overflow: hidden;
+      margin: 0 auto 60px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .valuesInnerTitle {
+      text-align: center;
+      font-family: var(--font-averia);
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 250%;
+      letter-spacing: -0.03em;
+      color: var(--color-black);
+    }
+  }
+
+  .numbers {
+    .numbersTitle {
+      margin-bottom: 40px;
+      color: var(--color-white);
+    }
+
+    .numbersList {
+      padding: 15px 22px;
+      gap: 50px;
+      display: flex;
+      align-items: center;
+      background: rgba(39, 39, 39, 0.6);
+    }
+
+    .numbersInnerTitle {
+      font-family: var(--font-oswald);
+      font-weight: 600;
+      font-size: 70px;
+      line-height: 1.3em;
+      text-transform: capitalize;
+    }
+
+    .numbersText {
+      font-family: var(--font-oswald);
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.3em;
+    }
+  }
+
+  .reviews {
+    .reviewsTitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--color-white);
+      & span {
+        & span {
+          font-family: var(--font-inter);
+          margin-left: 350px;
+        }
+      }
+    }
+
+    .reviewsCard {
+      padding: 22px 100px;
+      gap: 25px;
+      display: flex;
+      justify-content: center;
+      color: var(--color-black);
+      background-color: var(--color-white);
+    }
+
+    .reviewsImgWrapper {
+      width: 300px;
+      height: 320px;
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .reviewsName {
+      text-align: center;
+      font-family: var(--font-zenMaru);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.3em;
+      letter-spacing: -0.04em;
+      text-align: center;
+    }
+
+    .reviewsText {
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .swiper {
+      position: relative;
+    }
+    .customSwiperBtnPrev,
+    .customSwiperBtnNext {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      z-index: 98;
+      transform: translate(0%, -50%);
+    }
+    .customSwiperBtnPrev {
+      left: 25px;
+    }
+    .customSwiperBtnNext {
+      transform: translate(0, -50%) rotate(180deg);
+      right: 25px;
+    }
+  }
+}
