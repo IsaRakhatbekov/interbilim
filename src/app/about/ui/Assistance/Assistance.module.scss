@@ -1,0 +1,40 @@
+.assistance {
+  padding: 200px 0;
+
+  .wrapper {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 2px;
+        background-color: var(--color-red);
+    }
+  }
+
+  .text {
+    padding-left: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3em;
+    text-align: justify;
+    color: var(--chernyy);
+    margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -4px;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+        background-color: var(--color-red);
+    }
+  }
+}

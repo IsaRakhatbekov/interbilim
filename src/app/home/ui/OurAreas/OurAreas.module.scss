@@ -1,4 +1,5 @@
 .area {
+  position: relative;
   padding: 100px 0;
   color: var(--color-white);
   background: url("../../../../../public/areaBg.png") center/cover no-repeat;
@@ -16,29 +17,84 @@
     }
   }
 
+  .wrapper {
+    height: 100%;
+    background-color: #ccc;
+    gap: 100px;
+    display: flex;
+    align-items: center;
+  }
+
   .list {
-    gap: 120px;
+    gap: 100px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    position: relative;
+  }
 
-    &::after {
-      content: "";
+  .leftItem {
+    align-self: flex-end;
+  }
+
+  .line {
+    position: relative;
+    
+    background-color: var(--color-white);
+    border-radius: 5px;
+
+    & span {
       position: absolute;
-      height: 100%;
-      width: 5px;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
       background-color: var(--color-white);
-      left: 50%;
-      border-radius: 5px;
+      border-radius: 25px;
+    }
+
+    .lineFirst {
+      top: 0;
+    }
+    .lineSeond {
+      top: 20%;
+    }
+    .lineThird {
+      top: 40%;
+    }
+    .lineFourth {
+      top: 50%;
+    }
+    .lineFifth {
+      bottom: 50%;
+    }
+    .lineSixth {
+      bottom: 40%;
+    }
+    .lineSeventh {
+      bottom: 20%;
+    }
+    .lineEighth {
+      bottom: 0;
     }
   }
 
   .item {
-    width: 100%;
-    max-width: 450px;
-    &:nth-child(even) {
-      align-self: flex-end;
-      text-align: left;
-    }
+    width: 450px;
+  }
+
+  .innerTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: var(--belyy);
+  }
+
+  .text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--belyy);
   }
 }

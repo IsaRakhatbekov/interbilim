@@ -13,6 +13,13 @@ import bottomItem6 from "@/public/bottom6-min.svg";
 import bottomItem7 from "@/public/bottom7-min.svg";
 import bottomItem8 from "@/public/bottom8-min.svg";
 
+import activitiesMidle1 from "@/public/activitiesmidle1.png"
+import activitiesMidle2 from "@/public/activitiesmidle2.png"
+import activitiesMidle3 from "@/public/activitiesmidle3.png"
+import activitiesMidle4 from "@/public/activitiesmidle4.png"
+import activitiesMidle5 from "@/public/activitiesmidle5.png"
+import activitiesMidle6 from "@/public/activitiesmidle6.png"
+
 export const Activities = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -400,6 +407,26 @@ export const Activities = () => {
             широкий охват бенефициариев в свои проекты, повышая Индекс
             человеческого капитала страны.
           </p>
+          <div className={styles.activitiesImagesWrapper}>
+              <div className={styles.activitiesimg}>
+                  <Image src={activitiesMidle1} alt=""/>
+              </div>
+              <div className={styles.activitiesimg}>
+                  <Image src={activitiesMidle2} alt=""/>
+              </div>
+              <div className={styles.activitiesimg}>
+                  <Image src={activitiesMidle3} alt=""/>
+              </div>
+              <div className={styles.activitiesimg}>
+                  <Image src={activitiesMidle4} alt=""/>
+              </div>
+              <div className={styles.activitiesimg}>
+                  <Image src={activitiesMidle5} alt=""/>
+              </div>
+              <div className={styles.activitiesimg}>
+                  <Image src={activitiesMidle6} alt=""/>
+              </div>
+          </div>
         </div>
       </div>
     </section>

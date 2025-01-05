@@ -3,6 +3,7 @@ import Header from "@/src/components/Header/Header";
 import { Introduction } from "./ui/Introduction/Introduction";
 import { Activities } from "./ui/Activities/Activities";
 import { SecondHero } from "./ui/SecondHero/SecondHero";
+import { Assistance } from "./ui/Assistance/Assistance";
 
 const About = () => {
   return (
@@ -12,6 +13,7 @@ const About = () => {
         <SecondHero />
         <Introduction />
         <Activities />
+        <Assistance />
       </main>
       <Footer />
     </div>
