@@ -1,0 +1,94 @@
+.cooperation {
+  background-color: var(--color-beige);
+  padding: 200px 0;
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .subtitle {
+    width: 100%;
+    max-width: 995px;
+    margin: 0 auto;
+    font-family: var(--font-averia);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    margin-bottom: 50px;
+  }
+
+  .listTitle {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.4em;
+    color: var(--chernyy);
+  }
+
+  .cooperationInnerTitle {
+    text-align: left;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3em;
+    letter-spacing: -0.03em;
+    margin-bottom: 30px;
+  }
+
+  .cooperationInnerSubtitle {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.3em;
+  }
+
+  .left {
+    width: 45%;
+  }
+
+  .right {
+    height: 100%;
+    width: 45%;
+  }
+
+  .donationImgWrapperSecond {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto 0;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: var(--color-black);
+
+    .point {
+      position: absolute; /* Позиционирование точки относительно линии */
+      left: 50%; /* Центрирование точки на линии */
+      transform: translateX(-50%);
+      width: 10px; /* Размер точки */
+      height: 10px; /* Размер точки */
+      background-color: var(--color-black); /* Цвет точки */
+      border-radius: 50%; /* Круглая форма */
+    }
+  }
+}

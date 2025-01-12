@@ -1,0 +1,15 @@
+.ourProjects {
+  background-color: var(--color-beige);
+  padding: 200px 0;
+  .wrapper {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .list {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}

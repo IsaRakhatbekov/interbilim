@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./Header.module.scss";
 import logo from "@/public/logo.svg";
-import { Link, NavLink } from "react-router-dom";
+import Link from "next/link";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,34 +32,34 @@ const Header = () => {
           </a>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <Link className={styles.link} to="/">
+              <Link className={styles.link} href="/">
                 Главная
               </Link>
             </li>
             <li className={styles.item}>
-              <a className={styles.link} href="/about">
+              <Link className={styles.link} href="/about">
                 О нас
-              </a>
+              </Link>
             </li>
             <li className={styles.item}>
-              <a className={styles.link} href="/cooperation">
+              <Link className={styles.link} href="/ourProjects">
                 Проекты
-              </a>
+              </Link>
             </li>
             <li className={styles.item}>
-              <a className={styles.link} href="#">
+              <Link className={styles.link} href="/certificates">
                 Публикации
-              </a>
+              </Link>
             </li>
             <li className={styles.item}>
-              <a className={styles.link} href="#">
+              <Link className={styles.link} href="#">
                 Галерея
-              </a>
+              </Link>
             </li>
             <li className={styles.item}>
-              <a className={styles.link} href="#">
+              <Link className={styles.link} href="#">
                 Контакты
-              </a>
+              </Link>
             </li>
           </ul>
           <button className={styles.btn}>Сотрудничество</button>

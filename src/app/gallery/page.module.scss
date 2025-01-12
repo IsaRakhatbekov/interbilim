@@ -1,0 +1,27 @@
+.gallery {
+  padding: 200px 0;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .littleVideoWrapper {
+    width: 700px;
+    height: 400px;
+    background-color: #ccc;
+  }
+  .videoWrapper {
+    width: 370px;
+    height: 400px;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .imageWrapper {
+    display: flex;
+  }
+}

@@ -4,6 +4,8 @@ import { Introduction } from "./ui/Introduction/Introduction";
 import { Activities } from "./ui/Activities/Activities";
 import { SecondHero } from "./ui/SecondHero/SecondHero";
 import { Assistance } from "./ui/Assistance/Assistance";
+import Chronology from "./ui/Chronology/Chronology";
+import Organization from "./ui/Organization/Organization";
 
 const About = () => {
   return (
@@ -14,6 +16,8 @@ const About = () => {
         <Introduction />
         <Activities />
         <Assistance />
+        <Chronology />
+        <Organization />
       </main>
       <Footer />
     </div>

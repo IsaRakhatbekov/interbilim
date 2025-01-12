@@ -1,0 +1,43 @@
+.chronology {
+  background-color: var(--color-beige);
+  .chronologyTitle {
+    margin-bottom: 30px;
+  }
+
+  .list {
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    // max-width: 950px;
+  }
+
+  .descWrapper {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desc {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2em;
+  }
+  .year {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-align: right;
+  }
+  .redYear {
+    color: var(--color-red);
+  }
+}

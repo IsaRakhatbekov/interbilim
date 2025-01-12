@@ -1,0 +1,15 @@
+.publications {
+  padding: 200px 0;
+
+  .wrapper {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
