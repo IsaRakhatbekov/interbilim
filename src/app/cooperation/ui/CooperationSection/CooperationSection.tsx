@@ -33,7 +33,7 @@ export const CooperationSection = () => {
               </h3>
               <ul className={styles.list}>
                 <li className={`${styles.item} ${styles.listTitle}`}>
-                  Что вы получите:{" "}
+                  Что вы получите:
                 </li>
                 <li className={styles.item}>
                   <p className={styles.text}>
@@ -73,6 +73,7 @@ export const CooperationSection = () => {
                   </p>
                 </li>
               </ul>
+              <button className={styles.btn}>Поддержать нас</button>
               <div className={styles.donationImgWrapper}>
                 <Image src={dontaionImg} alt="" />
               </div>
@@ -127,14 +128,13 @@ export const CooperationSection = () => {
                   </p>
                 </li>
               </ul>
+              <button className={styles.btn}>Связаться с нами</button>
             </div>
           </div>
           <div className={styles.line}>
-            <div className={styles.line}>
-              <div className={styles.point} style={{ top: "30px" }}></div>
-              <div className={styles.point} style={{ top: "230px" }}></div>
-              <div className={styles.point} style={{ top: "430px" }}></div>
-            </div>
+            <div className={`${styles.point} ${styles.first}`}></div>
+            <div className={`${styles.point} ${styles.second}`}></div>
+            <div className={`${styles.point} ${styles.third}`}></div>
           </div>
           <div className={styles.right}>
             <div className={styles.donation}>
@@ -150,7 +150,7 @@ export const CooperationSection = () => {
               </h3>
               <ul className={styles.list}>
                 <li className={`${styles.item} ${styles.listTitle}`}>
-                  Что вы получите:{" "}
+                  Что вы получите:
                 </li>
                 <li className={styles.item}>
                   <p className={styles.text}>
@@ -190,6 +190,8 @@ export const CooperationSection = () => {
                   </p>
                 </li>
               </ul>
+              <button className={styles.btn}>Стать партнером</button>
+
               <div className={styles.donationImgWrapperSecond}>
                 <Image src={volunteering} alt="" />
               </div>

@@ -1,27 +1,123 @@
 .gallery {
-  padding: 200px 0;
+  padding: 0 0 200px;
+  overflow: hidden;
+
+  .galleryHero {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background-color: #010101;
+  }
+
   .wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
-  .littleVideoWrapper {
-    width: 700px;
-    height: 400px;
-    background-color: #ccc;
+
+  .lastWrapper {
+    margin-bottom: 80px;
   }
+
   .videoWrapper {
-    width: 370px;
+    position: relative;
+    width: 50%;
     height: 400px;
     overflow: hidden;
+    background-color: #ccc;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(1, 1, 1, 0.4);
+      z-index: 5;
+      top: 0;
+      left: 0;
+      position: absolute;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        background-color: rgba(1, 1, 1, 0.1);
+      }
+
+      & img {
+        transform: scale(1.1);
+      }
+
+      .play {
+        background-color: #fff;
+        box-shadow: 10px 10px 55px #ccc;
+
+        & svg {
+          & path {
+            fill: #010101;
+          }
+        }
+      }
+    }
 
     & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all 0.3s;
     }
   }
 
-  .imageWrapper {
+  .imagesWrapper {
+    width: 50%;
     display: flex;
+    align-items: center;
+  }
+
+  .imgWrapper {
+    width: 100%;
+    max-width: 50%;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+      & img {
+        transform: scale(1.1);
+      }
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+
+  .play {
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    border: 2px solid var(--color-white);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+
+    & svg {
+      position: relative;
+      left: 4px;
+      & path {
+        transition: all 0.3s;
+      }
+    }
   }
 }

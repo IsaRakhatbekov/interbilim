@@ -1,5 +1,4 @@
 .chronology {
-  background-color: var(--color-beige);
   .chronologyTitle {
     margin-bottom: 30px;
   }
@@ -19,9 +18,22 @@
   }
 
   .descWrapper {
+    position: relative;
     gap: 5px;
     display: flex;
     flex-direction: column;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 48%;
+      left: -30px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      border: 2px solid var(--color-red);
+      background-color: var(--color-white);
+    }
   }
 
   .desc {

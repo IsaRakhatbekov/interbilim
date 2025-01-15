@@ -23,6 +23,7 @@ body {
   font-size: 16px;
   line-height: 1.3em;
   color: var(--color-black);
+  background-color: var(--color-beige);
 }
 
 .def-title {
@@ -72,7 +73,6 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-beige);
 }
 .page-wrapper {
   display: flex;

@@ -7,6 +7,11 @@ import Link from "next/link";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [burger, setBurger] = useState(false);
+
+  const handleClickBurger = () => {
+    setBurger((prev) => !prev);
+  };
 
   useEffect(() => {
     if (window.scrollY > 0) {
@@ -47,22 +52,68 @@ const Header = () => {
               </Link>
             </li>
             <li className={styles.item}>
-              <Link className={styles.link} href="/certificates">
+              <Link className={styles.link} href="/publications">
                 Публикации
               </Link>
             </li>
             <li className={styles.item}>
-              <Link className={styles.link} href="#">
+              <Link className={styles.link} href="/gallery">
                 Галерея
               </Link>
             </li>
             <li className={styles.item}>
-              <Link className={styles.link} href="#">
+              <Link className={styles.link} href="/contacts">
                 Контакты
               </Link>
             </li>
           </ul>
           <button className={styles.btn}>Сотрудничество</button>
+          <button
+            onClick={handleClickBurger}
+            className={`${styles.menuBtn} ${
+              burger ? styles.menuBtnActive : ""
+            }`}
+          >
+            <span></span>
+          </button>
+          <div
+            className={`${styles.menuBody} ${
+              burger ? styles.menuBodyActive : ""
+            }`}
+          >
+            <ul className={styles.menuList}>
+              <li className={styles.menuItem}>
+                <Link className={styles.menuLink} href="/">
+                  Главная
+                </Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.menuLink} href="/about">
+                  О нас
+                </Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.menuLink} href="/ourProjects">
+                  Проекты
+                </Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.menuLink} href="/publications">
+                  Публикации
+                </Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.menuLink} href="/gallery">
+                  Галерея
+                </Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.menuLink} href="/contacts">
+                  Контакты
+                </Link>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
