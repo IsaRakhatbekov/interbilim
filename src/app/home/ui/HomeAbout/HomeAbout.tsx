@@ -64,7 +64,7 @@ const homeAbout = () => {
           </ul>
         </div>
         <div className={styles.partners}>
-          <h2 className={`${styles.acquaintanceTitle} def-title`}>
+          <h2 className={`${styles.partnersTitle} def-title`}>
             С кем мы <br />
             <span>
               <span>рабо</span>таем

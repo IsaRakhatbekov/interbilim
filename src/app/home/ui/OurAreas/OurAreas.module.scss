@@ -27,9 +27,11 @@
 
   .list {
     gap: 100px;
-    width: 50%;
+    width: 100%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
   }
 
   .left {
@@ -104,5 +106,59 @@
     font-size: 16px;
     line-height: 150%;
     color: var(--belyy);
+  }
+}
+
+@media (max-width: 1200px) {
+  .area {
+    .wrapper {
+      gap: 50px;
+      justify-content: center;
+    }
+
+    .list {
+      max-width: 300px;
+      margin: 0;
+    }
+
+    .left {
+      &:nth-child(1) {
+        margin-top: 150px;
+      }
+    }
+    .innerTitle {
+      font-size: 20px;
+    }
+
+    .text {
+      font-size: 14px;
+    }
+
+    .line {
+      .lineFirst {
+        top: 14%;
+      }
+      .lineSeond {
+        top: 25%;
+      }
+      .lineThird {
+        top: 35%;
+      }
+      .lineFourth {
+        top: 44%;
+      }
+      .lineFifth {
+        bottom: 40%;
+      }
+      .lineSixth {
+        bottom: 32%;
+      }
+      .lineSeventh {
+        bottom: 18%;
+      }
+      .lineEighth {
+        bottom: 11%;
+      }
+    }
   }
 }

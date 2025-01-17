@@ -12,10 +12,10 @@ export const Home = () => {
     <div className=".page-wrapper">
       <Header />
       <main>
-        {/* <Hero />
+        <Hero />
         <HomeAbout />
         <OurAreas />
-        <Interbilim />
+        {/*<Interbilim />
         <Partners /> */}
       </main>
       {/* <Footer /> */}

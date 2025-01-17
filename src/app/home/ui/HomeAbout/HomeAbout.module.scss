@@ -2,6 +2,7 @@
   padding: 90px 0;
   background-color: #f3f0e9;
   position: relative;
+  overflow: hidden;
 
   &::before,
   &::after {
@@ -169,6 +170,91 @@
       bottom: 15px;
       width: 140px;
       height: 185px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    .acquaintance {
+      .acquaintanceContent {
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .about {
+    .acquaintance {
+      .acquaintanceTitle {
+        & span {
+          margin-left: 0px;
+        }
+      }
+
+      .acquaintanceWrapper {
+        flex-direction: column;
+      }
+    }
+
+    .partners {
+      .partnersTitle {
+        margin-bottom: 30px;
+      }
+      .partnersText {
+        font-size: 20px;
+      }
+      .partnersList {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    &::before,
+    &::after {
+      width: 200px;
+      height: 400px;
+      top: 54%;
+    }
+    .partners {
+      .partnersText {
+        font-size: 18px;
+      }
+
+      .partnersBigImg {
+        width: 275px;
+        height: 350px;
+      }
+
+      .partnersFirst {
+        width: 110px;
+        height: 141px;
+      }
+      .partnersThird {
+        width: 110px;
+        height: 141px;
+      }
+      .partnersSecond {
+        width: 140px;
+        height: 100px;
+        bottom: -50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    .partners {
+      .partnersTitle {
+        & span {
+          margin-left: -50px;
+        }
+      }
     }
   }
 }
