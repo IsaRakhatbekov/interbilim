@@ -1,4 +1,5 @@
 .about {
+  overflow: hidden;
   padding: 90px 0;
   background-color: #f3f0e9;
   position: relative;
@@ -22,6 +23,7 @@
 
   .acquaintance {
     margin-bottom: 100px;
+    overflow: hidden;
 
     .acquaintanceTitle {
       margin-bottom: 40px;
@@ -77,9 +79,15 @@
       grid-row: 1 / 2; /* На первой строке */
       width: 100%;
       height: auto;
+      overflow: hidden;
+    }
+
+    .littleImg {
+      overflow: hidden;
     }
 
     .littleImgFirst {
+      overflow: hidden;
       grid-column: 1 / 2; /* От 1 до 2 колонки */
       grid-row: 2 / 3; /* На второй строке */
       width: 160px;
@@ -87,6 +95,7 @@
     }
 
     .littleImgSecond {
+      overflow: hidden;
       grid-column: 2 / 3; /* От 2 до 3 колонки */
       grid-row: 2 / 3; /* На второй строке */
       width: 160px;
@@ -94,6 +103,7 @@
     }
 
     .littleImgLong {
+      overflow: hidden;
       position: absolute; /* Абсолютное позиционирование */
       bottom: -40px;
       left: calc(100% - 120px); /* Смещение в правый край, с учетом ширины */
@@ -177,6 +187,13 @@
 @media (max-width: 1200px) {
   .about {
     .acquaintance {
+      .acquaintanceTitle {
+        font-size: 50px;
+
+        & span {
+          font-size: 50px;
+        }
+      }
       .acquaintanceContent {
         max-width: 450px;
       }
@@ -201,12 +218,44 @@
     .partners {
       .partnersTitle {
         margin-bottom: 30px;
+        font-size: 50px;
+
+        & span {
+          font-size: 50px;
+        }
       }
       .partnersText {
         font-size: 20px;
       }
       .partnersList {
         flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    .acquaintance {
+      .acquaintanceTitle {
+        font-size: 40px;
+        & span {
+          font-size: 40px;
+        }
+      }
+
+      .acquaintanceInnerTitle {
+        font-size: 20px;
+      }
+    }
+
+    .partners {
+      .partnersTitle {
+        font-size: 40px;
+
+        & span {
+          font-size: 40px;
+        }
       }
     }
   }
@@ -249,6 +298,22 @@
 
 @media (max-width: 500px) {
   .about {
+    .acquaintance {
+      .acquaintanceBtn {
+        font-size: 18px;
+        padding: 10px 50px;
+        border-radius: 12px;
+      }
+
+      .acquaintanceWrapper {
+        overflow: hidden;
+      }
+
+      .acquaintanceImagesWrapper {
+        width: 100%;
+        gap: 20px;
+      }
+    }
     .partners {
       .partnersTitle {
         & span {

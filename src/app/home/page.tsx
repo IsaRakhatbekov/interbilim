@@ -15,10 +15,11 @@ export const Home = () => {
         <Hero />
         <HomeAbout />
         <OurAreas />
-        {/*<Interbilim />
-        <Partners /> */}
+        <Interbilim />
+        {/*  need to finish Interbilim adaptive */}
+        <Partners />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

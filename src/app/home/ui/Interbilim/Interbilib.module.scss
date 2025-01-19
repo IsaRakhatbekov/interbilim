@@ -47,7 +47,8 @@
     }
 
     .valuesImgWrapper {
-      width: 260px;
+      width: 100%;
+      max-width: 260px;
       height: 280px;
       overflow: hidden;
       margin: 0 auto 60px;
@@ -64,7 +65,7 @@
       font-family: var(--font-averia);
       font-weight: 400;
       font-size: 30px;
-      line-height: 250%;
+      line-height: 1.3em;
       letter-spacing: -0.03em;
       color: var(--color-black);
     }
@@ -152,6 +153,11 @@
     .reviewsText {
       max-width: 500px;
       text-align: center;
+      display: -webkit-box;
+      -webkit-line-clamp: 15; /* Ограничиваем количество строк */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .swiper {
@@ -172,6 +178,237 @@
     .customSwiperBtnNext {
       transform: translate(0, -50%) rotate(180deg);
       right: 25px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .interbilim {
+    padding: 200px 0 0;
+
+    .values {
+      .valuesList {
+        gap: 20px;
+      }
+
+      .valuesImgWrapper {
+        height: 230px;
+        margin: 0 auto 18px;
+      }
+
+      .valuesInnerTitle {
+        font-size: 22px;
+      }
+    }
+
+    .numbers {
+      .numbersTitle {
+        font-size: 50px;
+        & span {
+          font-size: 50px;
+        }
+      }
+      .numbersList {
+        gap: 20px;
+      }
+      .numbersInnerTitle {
+        font-size: 50px;
+      }
+    }
+
+    .reviews {
+      .reviewsTitle {
+        font-size: 50px;
+
+        & span {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .interbilim {
+    padding: 130px 0 0;
+
+    .numbers {
+      .numbersInnerTitle {
+        font-size: 40px;
+      }
+      .numbersText {
+        font-size: 17px;
+      }
+
+      .numbersTitle {
+        font-size: 40px;
+        color: var(--color-white);
+        & span {
+          font-size: 40px;
+          margin-left: 0px;
+        }
+      }
+    }
+
+    .reviews {
+      bottom: -100px;
+
+      .reviewsTitle {
+        font-size: 40px;
+
+        & span {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .interbilim {
+    padding: 0;
+    .values {
+      padding-bottom: 40px;
+      position: static;
+
+      .valuesList {
+        padding: 0 10px;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .valuesTitle {
+        color: var(--color-black);
+        margin-bottom: 40px;
+        font-size: 50px;
+        & span {
+          font-size: 50px;
+
+          & span {
+            font-size: 50px;
+          }
+        }
+      }
+      .valuesImgWrapper {
+        // height: 150px;
+      }
+
+      .valuesInnerTitle {
+        font-size: 17px;
+      }
+    }
+    .numbers {
+      .numbersList {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+
+      .numbersInnerTitle {
+        text-align: center;
+      }
+
+      .numbersText {
+        text-align: center;
+      }
+    }
+
+    .reviews {
+      .reviewsCard {
+        align-items: center;
+        padding: 22px 49px;
+      }
+      .reviewsImgWrapper {
+        width: 222px;
+        height: 250px;
+      }
+
+      .reviewsText {
+        text-align: left;
+        width: 100%;
+        max-width: 500px;
+        -webkit-line-clamp: 10;
+      }
+
+      .customSwiperBtnPrev,
+      .customSwiperBtnNext {
+        width: 30px;
+        height: 30px;
+      }
+      .customSwiperBtnPrev {
+        left: 10px;
+      }
+      .customSwiperBtnNext {
+        transform: translate(0, -50%) rotate(180deg);
+        right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .interbilim {
+    .values {
+      .valuesImgWrapper {
+        width: 100%;
+        max-width: 60%;
+      }
+      .valuesItem {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    .reviews {
+      bottom: -40px;
+      .reviewsCard {
+        align-items: center;
+        padding: 22px 49px;
+      }
+      .reviewsImgWrapper {
+        width: 170px;
+        height: 200px;
+      }
+
+      .reviewsText {
+        text-align: left;
+        width: 100%;
+        max-width: 500px;
+        -webkit-line-clamp: 10;
+      }
+
+      .customSwiperBtnPrev,
+      .customSwiperBtnNext {
+        width: 30px;
+        height: 30px;
+      }
+      .customSwiperBtnPrev {
+        left: 10px;
+      }
+      .customSwiperBtnNext {
+        transform: translate(0, -50%) rotate(180deg);
+        right: 10px;
+      }
+
+      .reviewsName {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .interbilim {
+    .numbers {
+      .numbersList {
+        width: fit-content;
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+    .reviews {
+      .reviewsCard {
+        flex-direction: column;
+      }
     }
   }
 }

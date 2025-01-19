@@ -92,13 +92,8 @@ body {
   font-size: 14px;
 }
 
-@media (max-width: 991px) {
-  .def-title {
-    font-size: 50px;
-
-    & span {
-      font-size: 50px;
-      margin-left: -200px;
-    }
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
   }
 }

@@ -1,6 +1,5 @@
 .partners {
   padding: 300px 0 350px;
-  // background-color: #f3f0e9;
 
   .partnersTitle {
     margin-bottom: 40px;
@@ -11,5 +10,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 991px) {
+  .partners {
+    padding: 150px 0 200px;
+
+    .partnersTitle {
+      font-size: 50px;
+
+      & span {
+        font-size: 50px;
+        margin-left: 0px;
+      }
+    }
   }
 }

@@ -88,7 +88,8 @@
   }
 
   .item {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
 
   .innerTitle {
@@ -114,11 +115,6 @@
     .wrapper {
       gap: 50px;
       justify-content: center;
-    }
-
-    .list {
-      max-width: 300px;
-      margin: 0;
     }
 
     .left {
@@ -159,6 +155,152 @@
       .lineEighth {
         bottom: 11%;
       }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .area {
+    .areaTitle {
+      font-size: 50px;
+      & span {
+        font-size: 50px;
+      }
+    }
+    .line {
+      .lineFirst {
+        top: 8%;
+      }
+      .lineSeond {
+        top: 20%;
+      }
+      .lineThird {
+        top: 35%;
+      }
+      .lineFourth {
+        top: 44%;
+      }
+      .lineFifth {
+        bottom: 40%;
+      }
+      .lineSixth {
+        bottom: 32%;
+      }
+      .lineSeventh {
+        bottom: 18%;
+      }
+      .lineEighth {
+        bottom: 8%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .area {
+    .wrapper {
+      position: relative;
+      flex-direction: column;
+    }
+
+    .line {
+      top: 0;
+      left: 50px;
+      height: 1120px;
+      position: absolute;
+
+      .lineFirst {
+        top: 0%;
+      }
+      .lineSeond {
+        top: 14%;
+      }
+      .lineThird {
+        top: 28%;
+      }
+      .lineFourth {
+        top: 41%;
+      }
+      .lineFifth {
+        bottom: 45%;
+      }
+      .lineSixth {
+        bottom: 32%;
+      }
+      .lineSeventh {
+        bottom: 18%;
+      }
+      .lineEighth {
+        bottom: 3%;
+      }
+    }
+
+    .list {
+      gap: 50px;
+      margin-left: 100px;
+    }
+
+    .left {
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .area {
+    padding: 50px 0 100px;
+    .areaTitle {
+      font-size: 40px;
+      & span {
+        font-size: 40px;
+        margin-left: -50px;
+      }
+    }
+    .list {
+      margin-left: 50px;
+    }
+
+    .line {
+      left: 25px;
+      height: 1600px;
+
+      & span {
+        width: 14px;
+        height: 14px;
+        left: -7px;
+      }
+
+      .lineFirst {
+        top: 0%;
+      }
+      .lineSeond {
+        top: 13%;
+      }
+      .lineThird {
+        top: 25%;
+      }
+      .lineFourth {
+        top: 37%;
+      }
+      .lineFifth {
+        bottom: 50%;
+      }
+      .lineSixth {
+        bottom: 36%;
+      }
+      .lineSeventh {
+        bottom: 23%;
+      }
+      .lineEighth {
+        bottom: 8%;
+      }
+    }
+
+    .item,
+    .list {
+      max-width: 280px;
     }
   }
 }
