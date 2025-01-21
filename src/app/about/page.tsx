@@ -14,10 +14,10 @@ const About = () => {
       <main>
         <SecondHero />
         <Introduction />
-        <Activities />
+        {/* <Activities /> */}
         <Assistance />
         <Chronology />
-        <Organization />
+        {/* <Organization /> */}
       </main>
       <Footer />
     </div>

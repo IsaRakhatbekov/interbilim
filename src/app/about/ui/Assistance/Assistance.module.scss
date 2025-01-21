@@ -5,13 +5,13 @@
     position: relative;
 
     &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 2px;
-        background-color: var(--color-red);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 2px;
+      background-color: var(--color-red);
     }
   }
 
@@ -27,14 +27,47 @@
     position: relative;
 
     &::before {
-        content: "";
-        position: absolute;
-        top: 4px;
-        left: -4px;
-        width: 10px;
-        height: 10px;
-        border-radius: 20px;
-        background-color: var(--color-red);
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+      background-color: var(--color-red);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .assistance {
+    .assistanceTitle {
+      font-size: 45px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .assistance {
+    padding: 100px 0;
+
+    .assistanceTitle {
+      font-size: 38px;
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .assistance {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .assistance {
+    .assistanceTitle {
+      font-size: 33px;
     }
   }
 }
