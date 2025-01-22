@@ -10,7 +10,7 @@ const Footer = () => {
           <ul className={styles.list}>
             <li className={styles.item}>
               <a className={styles.logo} href="#">
-                <Image src={logo} alt="" />
+                <Image src={logo} alt="" priority={false} />
               </a>
             </li>
             <li className={`${styles.item} ${styles.linksWrapper}`}>

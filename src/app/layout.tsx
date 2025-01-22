@@ -1,10 +1,8 @@
-"use client";
-
 import localFont from "next/font/local";
-
 import "../global/_reset.scss";
 import "../global/global.scss";
-import { BrowserRouter } from "react-router-dom";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 const averia = localFont({
   src: [
@@ -20,6 +18,7 @@ const averia = localFont({
     },
   ],
   variable: "--font-averia",
+  preload: false
 });
 
 const inter = localFont({
@@ -66,6 +65,7 @@ const inter = localFont({
     },
   ],
   variable: "--font-inter",
+  preload: false,
 });
 
 const oswald = localFont({
@@ -92,6 +92,7 @@ const oswald = localFont({
     },
   ],
   variable: "--font-oswald",
+  preload: false,
 });
 
 const zenMaru = localFont({
@@ -108,6 +109,7 @@ const zenMaru = localFont({
     },
   ],
   variable: "--font-zenMaru",
+  preload: false,
 });
 
 export default function RootLayout({
@@ -116,11 +118,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body
         className={`${averia.variable} ${inter.variable} ${oswald.variable} ${zenMaru.variable}`}
       >
-        <BrowserRouter>{children}</BrowserRouter>
+        <div className=".page-wrapper">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
