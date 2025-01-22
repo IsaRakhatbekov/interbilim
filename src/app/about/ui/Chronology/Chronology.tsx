@@ -34,7 +34,6 @@ const Chronology = () => {
                   );
                 })}
               </div>
-
               <div className={styles.descWrapper}>
                 {item.description.map((desc, descIndex) => (
                   <p className={styles.desc} key={descIndex}>

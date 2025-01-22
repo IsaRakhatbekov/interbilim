@@ -7,6 +7,18 @@
     gap: 100px;
     display: flex;
     flex-direction: column;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 3px;
+      background-color: red;
+      top: 0;
+      left: 140px;
+    }
   }
 
   .item {
@@ -14,7 +26,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    // max-width: 950px;
   }
 
   .descWrapper {
@@ -33,6 +44,12 @@
       border-radius: 5px;
       border: 2px solid var(--color-red);
       background-color: var(--color-white);
+    }
+
+    &:nth-child(1) {
+      &::before {
+        left: -18px;
+      }
     }
   }
 
