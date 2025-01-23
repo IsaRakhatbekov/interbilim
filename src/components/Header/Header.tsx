@@ -9,6 +9,10 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [burger, setBurger] = useState(false);
 
+  const handleClickBurgerClose = () => {
+    setBurger(false);
+  };
+
   const handleClickBurger = () => {
     setBurger((prev) => !prev);
   };
@@ -25,6 +29,8 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  console.log(burger);
 
   return (
     <header
@@ -83,32 +89,56 @@ const Header = () => {
           >
             <ul className={styles.menuList}>
               <li className={styles.menuItem}>
-                <Link className={styles.menuLink} href="/">
+                <Link
+                  onClick={handleClickBurgerClose}
+                  className={styles.menuLink}
+                  href="/"
+                >
                   Главная
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link className={styles.menuLink} href="/about">
+                <Link
+                  onClick={handleClickBurgerClose}
+                  className={styles.menuLink}
+                  href="/about"
+                >
                   О нас
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link className={styles.menuLink} href="/ourProjects">
+                <Link
+                  onClick={handleClickBurgerClose}
+                  className={styles.menuLink}
+                  href="/ourProjects"
+                >
                   Проекты
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link className={styles.menuLink} href="/publications">
+                <Link
+                  onClick={handleClickBurgerClose}
+                  className={styles.menuLink}
+                  href="/publications"
+                >
                   Публикации
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link className={styles.menuLink} href="/gallery">
+                <Link
+                  onClick={handleClickBurgerClose}
+                  className={styles.menuLink}
+                  href="/gallery"
+                >
                   Галерея
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link className={styles.menuLink} href="/contacts">
+                <Link
+                  onClick={handleClickBurgerClose}
+                  className={styles.menuLink}
+                  href="/contacts"
+                >
                   Контакты
                 </Link>
               </li>
