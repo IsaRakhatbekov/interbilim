@@ -9,7 +9,7 @@ import partnersFirst from "@/public/about/partnersFirst.png";
 import partnersSecond from "@/public/about/partnersSecond.png";
 import partnersThird from "@/public/about/partnersThird.png";
 
-const homeAbout = () => {
+const HomeAbout = () => {
   return (
     <section className={styles.about}>
       <div className={`${styles.aboutContainer} container`}>
@@ -101,4 +101,4 @@ const homeAbout = () => {
     </section>
   );
 };
-export default homeAbout;
+export default HomeAbout;
