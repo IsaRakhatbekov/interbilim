@@ -208,9 +208,8 @@ const page = () => {
               </ul>
               <div className={styles.mapWrapper}>
                 <iframe
+                  className={styles.iframe}
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.1487973293815!2d74.57848522622155!3d42.86970342115017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec83b2f964a0b%3A0x93160c99b6d67782!2zMjcg0YPQuy4g0KIuINCj0LzQtdGC0LDQu9C40LXQstCwLCDQkdC40YjQutC10LogNzIwMDIx!5e0!3m2!1sru!2skg!4v1736846973236!5m2!1sru!2skg"
-                  width="500"
-                  height="245"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
@@ -222,9 +221,8 @@ const page = () => {
             <div className={`${styles.wrapper} ${styles.secondWrapper}`}>
               <div className={styles.mapWrapper}>
                 <iframe
+                  className={styles.iframe}
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.8746756638498!2d72.78616987610634!3d40.54435787141936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdabf6cd575355%3A0xcdc8d2f0c2f17a76!2zMTEsIDMzNSDQo9C70LjRhtCwINCb0LXQvdC40L3QsCwg0J7RiCA3MjM1MDA!5e0!3m2!1sru!2skg!4v1736847323187!5m2!1sru!2skg"
-                  width="500"
-                  height="245"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"

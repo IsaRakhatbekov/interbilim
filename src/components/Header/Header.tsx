@@ -73,7 +73,9 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <button className={styles.btn}>Сотрудничество</button>
+          <Link href="/cooperation" className={styles.btn}>
+            Сотрудничество
+          </Link>
           <button
             onClick={handleClickBurger}
             className={`${styles.menuBtn} ${

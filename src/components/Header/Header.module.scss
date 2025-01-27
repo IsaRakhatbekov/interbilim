@@ -194,8 +194,7 @@
       top: 0;
       left: 0;
       color: var(--color-black);
-      // background-color: var(--color-white);
-      background-color: gray;
+      background-color: var(--color-white);
       z-index: 10;
     }
 
@@ -212,6 +211,24 @@
     .menuLink {
       display: inline-block;
       padding: 15px 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 10px 0;
+
+    .logo {
+      height: 45px;
+      width: 70px;
+    }
+
+    .btn {
+      font-weight: 400;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 8px;
     }
   }
 }

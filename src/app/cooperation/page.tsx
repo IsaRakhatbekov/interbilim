@@ -5,12 +5,10 @@ import { CooperationSection } from "./ui/CooperationSection/CooperationSection";
 const Cooperation = () => {
   return (
     <>
-      <Header />
       <main>
         <SecondHero />
         <CooperationSection />
       </main>
-      <Footer />
     </>
   );
 };

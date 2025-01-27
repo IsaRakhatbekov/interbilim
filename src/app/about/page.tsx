@@ -10,7 +10,6 @@ import Organization from "./ui/Organization/Organization";
 const About = () => {
   return (
     <div className=".page-wrapper">
-      <Header />
       <main>
         <SecondHero />
         <Introduction />
@@ -19,7 +18,6 @@ const About = () => {
         <Chronology />
         {/* <Organization /> */}
       </main>
-      <Footer />
     </div>
   );
 };
