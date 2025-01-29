@@ -11,9 +11,17 @@ const SwiperComponent = () => {
   return (
     <div className={styles.swiperContainer}>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={2}
         spaceBetween={20}
         loop={true}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+        }}
         className={styles.swiperWrapper}
       >
         <SwiperSlide>

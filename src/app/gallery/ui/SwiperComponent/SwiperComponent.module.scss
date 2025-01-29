@@ -21,3 +21,27 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .swiperContainer {
+    .slide {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .swiperContainer {
+    .slide {
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .swiperContainer {
+    .slide {
+      height: 150px;
+    }
+  }
+}
