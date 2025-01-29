@@ -84,6 +84,11 @@ body {
   flex: 1;
 }
 
+button,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .footer {
   background-color: var(--color-black);
   color: var(--color-white);

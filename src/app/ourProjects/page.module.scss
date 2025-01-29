@@ -12,3 +12,11 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 991px) {
+  .ourProjects {
+    .wrapper {
+      gap: 25px;
+    }
+  }
+}

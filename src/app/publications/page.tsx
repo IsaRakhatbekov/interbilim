@@ -6,45 +6,39 @@ import PublicationsCard from "./ui/PublicationsCard";
 
 const Publications = () => {
   return (
-    <>
-      <Header />
-      <main>
-        <section className={styles.publications}>
-          <div className={`${styles.container} container`}>
-            <div className={styles.wrapper}>
-              <div className={styles.list}>
-                {publicationsCard.left.map((publications, index) => (
-                  <PublicationsCard
-                    key={index}
-                    image={publications.image}
-                    title={publications.title}
-                  />
-                ))}
-              </div>
-              <div className={styles.list}>
-                {publicationsCard.middle.map((publications, index) => (
-                  <PublicationsCard
-                    key={index}
-                    image={publications.image}
-                    title={publications.title}
-                  />
-                ))}
-              </div>
-              <div className={styles.list}>
-                {publicationsCard.right.map((publications, index) => (
-                  <PublicationsCard
-                    key={index}
-                    image={publications.image}
-                    title={publications.title}
-                  />
-                ))}
-              </div>
-            </div>
+    <section className={styles.publications}>
+      <div className={`${styles.container} container`}>
+        <div className={styles.wrapper}>
+          <div className={styles.list}>
+            {publicationsCard.left.map((publications, index) => (
+              <PublicationsCard
+                key={index}
+                image={publications.image}
+                title={publications.title}
+              />
+            ))}
           </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+          <div className={styles.list}>
+            {publicationsCard.middle.map((publications, index) => (
+              <PublicationsCard
+                key={index}
+                image={publications.image}
+                title={publications.title}
+              />
+            ))}
+          </div>
+          <div className={styles.list}>
+            {publicationsCard.right.map((publications, index) => (
+              <PublicationsCard
+                key={index}
+                image={publications.image}
+                title={publications.title}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

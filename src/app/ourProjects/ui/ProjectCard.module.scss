@@ -34,3 +34,17 @@
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 991px) {
+  .card {
+    padding: 25px;
+    .title {
+      font-size: 16px;
+    }
+
+    .imgWrapper {
+      aspect-ratio: none;
+      max-width: 180px;
+    }
+  }
+}
