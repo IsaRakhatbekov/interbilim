@@ -1,14 +1,10 @@
-import Footer from "@/src/components/Footer/Footer";
-import { SecondHero } from "../about/ui/SecondHero/SecondHero";
 import styles from "./page.module.scss";
-import Header from "@/src/components/Header/Header";
 import Image from "next/image";
 import kgMap from "@/public/kgMap.png";
 
 const page = () => {
   return (
     <main>
-      <SecondHero />
       <section className={styles.contacts}>
         <div className={`${styles.container} container`}>
           <h2 className={`${styles.title} secondDef-title`}>

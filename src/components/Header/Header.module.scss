@@ -101,12 +101,20 @@
   }
 
   .menuBody {
+    z-index: 99;
     display: none;
+    overflow-y: auto;
     transform: translateY(-150%);
     transition: all 0.3s;
+
+    .menuLink {
+      font-size: 20px;
+    }
   }
 
   .menuBodyActive {
+    z-index: 99;
+    overflow-y: auto;
     transform: translateY(0);
   }
 }

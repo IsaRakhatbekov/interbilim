@@ -1,9 +1,10 @@
 .about {
   overflow: hidden;
-  padding: 90px 0;
+  padding: 0px 0 90px;
   background-color: #f3f0e9;
   position: relative;
   overflow: hidden;
+  z-index: -1;
 
   &::before,
   &::after {
@@ -212,6 +213,12 @@
 
       .acquaintanceWrapper {
         flex-direction: column;
+      }
+
+      .acquaintanceBtn {
+        padding: 5px 60px;
+        border-radius: 12px;
+        font-size: 25px;
       }
     }
 

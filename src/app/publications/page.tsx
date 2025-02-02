@@ -1,6 +1,4 @@
-import Header from "@/src/components/Header/Header";
 import styles from "./page.module.scss";
-import Footer from "@/src/components/Footer/Footer";
 import { publicationsCard } from "@/src/data/publicationsData";
 import PublicationsCard from "./ui/PublicationsCard";
 

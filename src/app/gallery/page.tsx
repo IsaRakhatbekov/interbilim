@@ -1,7 +1,4 @@
-"use client";
 import styles from "./page.module.scss";
-import Header from "@/src/components/Header/Header";
-import Footer from "@/src/components/Footer/Footer";
 import Image from "next/image";
 import videoImg from "@/public/galleryVideo.png";
 import img from "@/public/certificates/certificates15.png";

@@ -1,5 +1,5 @@
 .introduction {
-  padding: 50px 0;
+  padding: 200px 0 50px;
   background-color: #f3f0e9;
 
   .introductionTitle {
@@ -98,6 +98,8 @@
 
 @media (max-width: 991px) {
   .introduction {
+    padding: 150px 0 50px;
+
     .introductionTitle {
       font-size: 50px;
 
@@ -126,6 +128,8 @@
 
 @media (max-width: 768px) {
   .introduction {
+    padding: 100px 0 50px;
+
     .introductionTitle {
       font-size: 40px;
       & span {
@@ -175,6 +179,13 @@
       & span {
         font-size: 35px;
         margin-left: -70px;
+      }
+    }
+
+    .archive {
+      .archiveImg {
+        width: 100%;
+        max-width: 100%;
       }
     }
 

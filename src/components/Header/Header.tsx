@@ -9,6 +9,15 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [burger, setBurger] = useState(false);
 
+  // Функция для блокировки/разблокировки скролла
+  useEffect(() => {
+    if (burger) {
+      document.body.style.overflow = "hidden"; // Блокируем скролл
+    } else {
+      document.body.style.overflow = ""; // Возвращаем скролл
+    }
+  }, [burger]);
+
   const handleClickBurgerClose = () => {
     setBurger(false);
   };
@@ -29,8 +38,6 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  console.log(burger);
 
   return (
     <header
