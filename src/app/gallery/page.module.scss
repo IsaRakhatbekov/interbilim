@@ -6,7 +6,8 @@
     display: inline-block;
     width: 100%;
     height: 100vh;
-    background-color: #010101;
+    background: url("../../../public/gallery/gallery-main.png") no-repeat
+      center/cover;
   }
 
   .wrapper {
