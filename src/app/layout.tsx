@@ -2,7 +2,6 @@ import localFont from "next/font/local";
 import "../global/_reset.scss";
 import "../global/global.scss";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
 
 const averia = localFont({
   src: [
@@ -125,7 +124,6 @@ export default function RootLayout({
         <div className=".page-wrapper">
           <Header />
           <main>{children}</main>
-          <Footer />
           <a className="whatsAppLink" href="#" target="_blank">
             <svg
               width="50"

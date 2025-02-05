@@ -4,6 +4,7 @@ import { Assistance } from "./ui/Assistance/Assistance";
 import Chronology from "./ui/Chronology/Chronology";
 import Organization from "./ui/Organization/Organization";
 import Structure from "./ui/Structure/Structure";
+import SecondFooter from "@/src/components/SecondFooter/SecondFooter";
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
         <Chronology />
         {/* <Organization /> */}
       </main>
+      <SecondFooter />
     </div>
   );
 };

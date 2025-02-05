@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import Hero from "../ui/Hero/Hero";
 import HomeAbout from "../ui/HomeAbout/HomeAbout";
 import Interbilim from "../ui/Interbilim/Interbilim";
@@ -13,6 +14,7 @@ export default function Main() {
       <Interbilim />
       {/*  need to finish Interbilim adaptive */}
       <Partners />
+      <Footer />
     </>
   );
 }

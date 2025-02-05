@@ -1,10 +1,11 @@
 import styles from "./page.module.scss";
 import Image from "next/image";
 import kgMap from "@/public/kgMap.png";
+import Footer from "@/src/components/Footer/Footer";
 
 const page = () => {
   return (
-    <main>
+    <>
       <section className={styles.contacts}>
         <div className={`${styles.container} container`}>
           <h2 className={`${styles.title} secondDef-title`}>
@@ -454,7 +455,8 @@ const page = () => {
           </div>
         </div>
       </section>
-    </main>
+      <Footer />
+    </>
   );
 };
 
