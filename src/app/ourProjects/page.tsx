@@ -21,6 +21,9 @@ const OurProjects = () => {
                 title={project.title}
                 image={project.image}
                 text={project.text}
+                list={project.list}
+                secondText={project.secondText}
+                secondList={project.secondList}
               />
             ))}
           </div>
@@ -32,6 +35,9 @@ const OurProjects = () => {
                 title={project.title}
                 image={project.image}
                 text={project.text}
+                list={project.list}
+                secondText={project.secondText}
+                secondList={project.secondList}
               />
             ))}
           </div>

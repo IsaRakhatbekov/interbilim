@@ -13,6 +13,7 @@ const Publications = () => {
                 key={index}
                 image={publications.image}
                 title={publications.title}
+                link={publications.link}
               />
             ))}
           </div>
@@ -22,6 +23,7 @@ const Publications = () => {
                 key={index}
                 image={publications.image}
                 title={publications.title}
+                link={publications.link}
               />
             ))}
           </div>
@@ -31,6 +33,7 @@ const Publications = () => {
                 key={index}
                 image={publications.image}
                 title={publications.title}
+                link={publications.link}
               />
             ))}
           </div>

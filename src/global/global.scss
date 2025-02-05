@@ -97,6 +97,15 @@ a {
   font-size: 14px;
 }
 
+.whatsAppLink {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  z-index: 50;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
 @media (max-width: 500px) {
   body {
     font-size: 14px;

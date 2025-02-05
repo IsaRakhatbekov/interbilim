@@ -21,6 +21,14 @@ const page = () => {
                 >
                   Кыргызстан, 720010, г. Бишкек, ул. Уметалиева, 27
                 </a>
+                <h4 className={styles.innerTitle}>Веб-страница</h4>
+                <a
+                  className={`${styles.address} ${styles.text}`}
+                  href="https://interbilim.kg"
+                  target="_blank"
+                >
+                  https://interbilim.kg
+                </a>
               </li>
               <li className={`${styles.phoneWrapper} ${styles.item}`}>
                 <h4 className={styles.innerTitle}>Телефоны</h4>
@@ -51,7 +59,11 @@ const page = () => {
               </li>
               <li className={`${styles.socialWrapper} ${styles.item}`}>
                 <h4 className={styles.innerTitle}>Социальные сети</h4>
-                <a className={`${styles.socialLinks} ${styles.text}`} href="">
+                <a
+                  className={`${styles.socialLinks} ${styles.text}`}
+                  href="https://www.facebook.com/interbilimngo/"
+                  target="_blank"
+                >
                   <svg
                     width="40"
                     height="40"
@@ -93,7 +105,11 @@ const page = () => {
                   </svg>
                   Facebook
                 </a>
-                <a className={`${styles.socialLinks} ${styles.text}`} href="">
+                <a
+                  className={`${styles.socialLinks} ${styles.text}`}
+                  href="https://www.instagram.com/interbilim.kg/"
+                  target="_blank"
+                >
                   <svg
                     width="40"
                     height="40"
@@ -157,7 +173,11 @@ const page = () => {
                   </svg>
                   Instagram
                 </a>
-                <a className={`${styles.socialLinks} ${styles.text}`} href="">
+                <a
+                  className={`${styles.socialLinks} ${styles.text}`}
+                  href="https://wa.me/996553602375"
+                  target="_blank"
+                >
                   <svg
                     width="40"
                     height="41"
@@ -234,6 +254,14 @@ const page = () => {
                 >
                   Кыргызстан, 723500 г. Ош ул. Ленина 335/11
                 </a>
+                <h4 className={styles.innerTitle}>Веб-страница</h4>
+                <a
+                  className={`${styles.address} ${styles.text}`}
+                  href="https://interbilim.kg"
+                  target="_blank"
+                >
+                  https://interbilim.kg
+                </a>
               </li>
               <li className={`${styles.phoneWrapper} ${styles.item}`}>
                 <h4 className={styles.innerTitle}>Телефоны</h4>
@@ -260,7 +288,7 @@ const page = () => {
                 <h4 className={styles.innerTitle}>Социальные сети</h4>
                 <a
                   className={`${styles.socialLinks} ${styles.text}`}
-                  href="#"
+                  href="https://www.facebook.com/interbilimngo/"
                   target="_blank"
                 >
                   <svg
@@ -306,7 +334,7 @@ const page = () => {
                 </a>
                 <a
                   className={`${styles.socialLinks} ${styles.text}`}
-                  href="#"
+                  href="https://www.instagram.com/interbilim.kg/"
                   target="_blank"
                 >
                   <svg
@@ -374,7 +402,7 @@ const page = () => {
                 </a>
                 <a
                   className={`${styles.socialLinks} ${styles.text}`}
-                  href="#"
+                  href="https://wa.me/996553602375"
                   target="_blank"
                 >
                   <svg

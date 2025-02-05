@@ -70,12 +70,16 @@ const page = () => {
           </span>
         </a>
         <div className={styles.imagesWrapper}>
-          <div className={styles.imgWrapper}>
+          <a href="#" className={styles.imgWrapper} target="_blank">
             <Image src={gallery2} alt="" />
-          </div>
-          <div className={styles.imgWrapper}>
+          </a>
+          <a
+            className={styles.imgWrapper}
+            href="https://drive.google.com/drive/folders/173K8dktG8xiFknv1Ic0lh0G4R1-7jV6R"
+            target="_blank"
+          >
             <Image src={gallery3} alt="" />
-          </div>
+          </a>
         </div>
       </div>
       <div className={styles.wrapper}>

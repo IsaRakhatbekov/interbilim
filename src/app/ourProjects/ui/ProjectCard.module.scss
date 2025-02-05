@@ -23,7 +23,7 @@
     & img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   .text {
@@ -32,6 +32,17 @@
     line-height: 150%;
     text-align: justify;
     margin-bottom: 10px;
+  }
+
+  .list {
+    padding-left: 20px;
+    list-style-type: disc; // Добавляет маркеры
+
+    li {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 5px;
+    }
   }
 }
 
