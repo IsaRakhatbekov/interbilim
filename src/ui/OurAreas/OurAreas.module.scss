@@ -1,306 +1,154 @@
-.area {
+// OurAreas.module.scss
+.ourAreas {
   position: relative;
-  padding: 100px 0 500px;
-  height: auto;
-  color: var(--color-white);
+  padding: 25px 0 500px;
   background: url("../../../public/areaBg.png") center/cover no-repeat;
+  color: white;
+}
 
-  .areaTitle {
-    margin-bottom: 50px;
-    color: var(--color-white);
+.title {
+  margin-bottom: 50px;
+  color: var(--color-white);
+}
 
-    & span {
-      margin-left: -200px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-      & span {
-        margin-left: 0px;
-      }
+.content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 4rem;
+}
+
+.timeline {
+  position: relative;
+  width: 2px;
+  background: white;
+  margin: 0 2rem;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+}
+
+.dot {
+  position: absolute;
+  left: -7px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+
+  @for $i from 0 through 7 {
+    &:nth-child(#{$i + 1}) {
+      top: calc(#{$i} * (100% / 7));
     }
-  }
-
-  .wrapper {
-    height: 100%;
-    gap: 100px;
-    display: flex;
-    align-items: center;
-  }
-
-  .list {
-    gap: 100px;
-    width: 100%;
-    max-width: 450px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-
-  .left {
-    &:nth-child(1) {
-      margin-top: 250px;
-    }
-  }
-
-  .leftItem {
-    align-self: flex-end;
-  }
-
-  .line {
-    position: relative;
-    height: 970px;
-    width: 2px;
-    background-color: var(--color-white);
-    border-radius: 5px;
-
-    & span {
-      position: absolute;
-      display: inline-block;
-      width: 25px;
-      height: 25px;
-      background-color: var(--color-white);
-      border-radius: 25px;
-      left: -12px;
-    }
-
-    .lineFirst {
-      top: 0;
-    }
-    .lineSeond {
-      top: 20%;
-    }
-    .lineThird {
-      top: 35%;
-    }
-    .lineFourth {
-      top: 47%;
-    }
-    .lineFifth {
-      bottom: 35%;
-    }
-    .lineSixth {
-      bottom: 24%;
-    }
-    .lineSeventh {
-      bottom: 10%;
-    }
-    .lineEighth {
-      bottom: 0;
-    }
-  }
-
-  .item {
-    width: 100%;
-    max-width: 450px;
-  }
-
-  .innerTitle {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 120%;
-    letter-spacing: -0.03em;
-    color: var(--belyy);
-  }
-
-  .text {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--belyy);
   }
 }
 
+.columnLeft,
+.columnRight {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.columnRight {
+  margin-top: 8rem;
+}
+
+.item {
+  max-width: 450px;
+  padding: 2rem;
+}
+
+.itemTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.itemText {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 1200px) {
-  .area {
-    .wrapper {
-      gap: 50px;
-      justify-content: center;
-    }
+  .ourAreas {
+    .title {
+      font-size: 50px;
+      & span {
+        margin-left: -100px;
+        font-size: 50px;
 
-    .left {
-      &:nth-child(1) {
-        margin-top: 150px;
+        & span {
+          margin-left: 0;
+        }
       }
     }
-    .innerTitle {
-      font-size: 20px;
-    }
+  }
+}
+// Адаптив
+@media (max-width: 1024px) {
+  .content {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
 
-    .text {
-      font-size: 14px;
-    }
+  .timeline {
+    display: none;
+  }
 
-    .line {
-      .lineFirst {
-        top: 14%;
-      }
-      .lineSeond {
-        top: 25%;
-      }
-      .lineThird {
-        top: 35%;
-      }
-      .lineFourth {
-        top: 44%;
-      }
-      .lineFifth {
-        bottom: 40%;
-      }
-      .lineSixth {
-        bottom: 32%;
-      }
-      .lineSeventh {
-        bottom: 18%;
-      }
-      .lineEighth {
-        bottom: 11%;
-      }
-    }
+  .columnLeft,
+  .columnRight {
+    margin-top: 0;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .item {
+    padding: 1rem;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 991px) {
-  .area {
-    .areaTitle {
-      font-size: 50px;
-      & span {
-        font-size: 50px;
-      }
-    }
-    .line {
-      .lineFirst {
-        top: 8%;
-      }
-      .lineSeond {
-        top: 20%;
-      }
-      .lineThird {
-        top: 35%;
-      }
-      .lineFourth {
-        top: 44%;
-      }
-      .lineFifth {
-        bottom: 40%;
-      }
-      .lineSixth {
-        bottom: 32%;
-      }
-      .lineSeventh {
-        bottom: 18%;
-      }
-      .lineEighth {
-        bottom: 8%;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .area {
-    .wrapper {
-      position: relative;
-      flex-direction: column;
-    }
-
-    .line {
-      top: 0;
-      left: 50px;
-      height: 1120px;
-      position: absolute;
-
-      .lineFirst {
-        top: 0%;
-      }
-      .lineSeond {
-        top: 14%;
-      }
-      .lineThird {
-        top: 28%;
-      }
-      .lineFourth {
-        top: 41%;
-      }
-      .lineFifth {
-        bottom: 45%;
-      }
-      .lineSixth {
-        bottom: 32%;
-      }
-      .lineSeventh {
-        bottom: 18%;
-      }
-      .lineEighth {
-        bottom: 3%;
-      }
-    }
-
-    .list {
-      gap: 50px;
-      margin-left: 100px;
-    }
-
-    .left {
-      &:nth-child(1) {
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .area {
-    padding: 50px 0 100px;
-    .areaTitle {
+  .ourAreas {
+    .title {
       font-size: 40px;
       & span {
+        margin-left: -100px;
         font-size: 40px;
-        margin-left: -50px;
+
+        & span {
+          margin-left: 0;
+        }
       }
     }
-    .list {
-      margin-left: 50px;
-    }
+  }
+}
 
-    .line {
-      left: 25px;
-      height: 1600px;
+@media (max-width: 768px) {
+  .ourAreas {
+    padding: 50px 0 150px;
+  }
+  .title {
+    font-size: 3rem;
+  }
 
-      & span {
-        width: 14px;
-        height: 14px;
-        left: -7px;
-      }
+  .itemTitle {
+    font-size: 1.25rem;
+  }
 
-      .lineFirst {
-        top: 0%;
-      }
-      .lineSeond {
-        top: 13%;
-      }
-      .lineThird {
-        top: 25%;
-      }
-      .lineFourth {
-        top: 37%;
-      }
-      .lineFifth {
-        bottom: 50%;
-      }
-      .lineSixth {
-        bottom: 36%;
-      }
-      .lineSeventh {
-        bottom: 23%;
-      }
-      .lineEighth {
-        bottom: 8%;
-      }
-    }
-
-    .item,
-    .list {
-      max-width: 280px;
-    }
+  .itemText {
+    font-size: 0.875rem;
   }
 }

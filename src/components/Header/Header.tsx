@@ -79,18 +79,21 @@ const Header = () => {
                 Контакты
               </Link>
             </li>
+            <li className={styles.item}>
+              <Link href="/cooperation" className={styles.btn}>
+                Сотрудничество
+              </Link>
+              <button
+                onClick={handleClickBurger}
+                className={`${styles.menuBtn} ${
+                  burger ? styles.menuBtnActive : ""
+                }`}
+              >
+                <span></span>
+              </button>
+            </li>
           </ul>
-          <Link href="/cooperation" className={styles.btn}>
-            Сотрудничество
-          </Link>
-          <button
-            onClick={handleClickBurger}
-            className={`${styles.menuBtn} ${
-              burger ? styles.menuBtnActive : ""
-            }`}
-          >
-            <span></span>
-          </button>
+
           <div
             className={`${styles.menuBody} ${
               burger ? styles.menuBodyActive : ""

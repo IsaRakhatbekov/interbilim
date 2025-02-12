@@ -51,6 +51,19 @@
       margin-bottom: 30px;
     }
   }
+
+  .socialLinksWrapper {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    & span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 1200px) {

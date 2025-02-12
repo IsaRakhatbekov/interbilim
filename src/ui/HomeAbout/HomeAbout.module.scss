@@ -121,9 +121,16 @@
       justify-content: center;
     }
 
-    .partnersText {
+    .partnersInnerTitle {
       font-weight: 500;
-      font-size: 25px;
+      font-size: 20px;
+      line-height: 1.3em;
+      margin-bottom: 20px;
+    }
+
+    .partnersText {
+      font-weight: 400;
+      font-size: 16px;
       line-height: 1.3em;
       max-width: 600px;
     }
@@ -173,7 +180,7 @@
       bottom: 0;
       margin: 0 auto;
       width: 155px;
-      height: 120px;
+      height: 95px;
     }
 
     .partnersThird {
