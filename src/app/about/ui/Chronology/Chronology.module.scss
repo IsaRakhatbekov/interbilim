@@ -1,68 +1,67 @@
 .chronology {
-  .chronologyTitle {
-    margin-bottom: 30px;
-  }
-
+  padding: 100px 0 350px;
   .list {
-    gap: 100px;
-    display: flex;
-    flex-direction: column;
-
     position: relative;
 
     &::before {
       content: "";
       position: absolute;
       height: 100%;
-      width: 3px;
+      width: 2px;
       background-color: red;
       top: 0;
-      left: 140px;
+      left: 145px;
+      transform: translateX(-50%); // Центрируем линию
     }
   }
 
   .item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 140px 1fr;
     gap: 40px;
-    display: flex;
+    margin-bottom: 40px;
     align-items: center;
-    width: 100%;
+    min-height: 100px; // Минимальная высота для пункта
+  }
+
+  .yearsWrapper {
+    position: relative;
+    text-align: right;
+    padding-right: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      width: 10px;
+      height: 10px;
+      background: var(--color-white);
+      border: 2px solid var(--color-red);
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   .descWrapper {
     position: relative;
-    gap: 5px;
-    display: flex;
-    flex-direction: column;
+    padding-left: 30px;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 48%;
-      left: -30px;
-      width: 10px;
-      height: 10px;
-      border-radius: 5px;
-      border: 2px solid var(--color-red);
-      background-color: var(--color-white);
-    }
-
-    &:nth-child(1) {
-      &::before {
-        left: -18px;
-      }
-    }
+  .descWrapper::before {
+    display: none;
   }
 
   .desc {
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 1.2em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
   }
   .year {
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 50px;
-    line-height: 120%;
+    line-height: 1.2em;
     letter-spacing: -0.02em;
     text-align: right;
   }
@@ -74,10 +73,7 @@
 @media (max-width: 1200px) {
   .chronology {
     .chronologyTitle {
-      font-size: 40px;
-    }
-    .desc {
-      font-size: 20px;
+      font-size: 50px;
     }
   }
 }
@@ -85,12 +81,6 @@
 @media (max-width: 991px) {
   .chronology {
     .chronologyTitle {
-      text-align: left;
-    }
-    .list {
-      gap: 55px;
-    }
-    .year {
       font-size: 40px;
     }
   }
@@ -98,19 +88,17 @@
 
 @media (max-width: 768px) {
   .chronology {
-    .year {
-      font-size: 30px;
+    .descWrapper {
+      padding-left: 0;
+      gap: 30px;
     }
-    .desc {
-      font-size: 16px;
-    }
-  }
-}
 
-@media (max-width: 500px) {
-  .chronology {
+    .yearsWrapper {
+      padding-right: 20px;
+    }
+
     .year {
-      font-size: 25px;
+      font-size: 40px;
     }
   }
 }
@@ -119,6 +107,9 @@
   .chronology {
     .chronologyTitle {
       font-size: 33px;
+    }
+    .year {
+      font-size: 30px;
     }
   }
 }

@@ -11,7 +11,7 @@ const About = () => {
     <div className=".page-wrapper">
       <main>
         <Introduction />
-        {/* <Activities /> */}
+        <Activities />
         <Assistance />
         <Structure />
         <Chronology />

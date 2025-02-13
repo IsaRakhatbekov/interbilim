@@ -97,13 +97,68 @@ a {
   font-size: 14px;
 }
 
-.whatsAppLink {
+.linkWrapper {
+  width: 50px; /* Начальная ширина только для иконки */
+  height: 50px;
   position: fixed;
   right: 35px;
   bottom: 50px;
   z-index: 50;
-  transition: all 0.3s;
   cursor: pointer;
+  overflow: hidden;
+  border-radius: 25px 25px 25px 0; /* Закругление слева */
+  transition: all 0.5s ease;
+}
+
+.whatsAppLink {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  transition: all 0.5s ease;
+  background: #fff; /* Белый фон для иконки */
+  border-radius: 25px; /* Круглая иконка */
+  z-index: 2;
+}
+
+.linkText {
+  position: absolute;
+  left: -100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 15px;
+  color: white;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.5s ease;
+  // width: calc(100% - 50px);
+  width: 250px;
+  // background: #4caf50;
+  border-radius: 25px; /* Закругление слева */
+}
+
+.linkWrapper:hover {
+  text-align: center;
+  background: #4caf50;
+  width: 200px; /* Финишная ширина всего блока */
+  border-radius: 25px; /* Закругление слева */
+  // background: #4caf50; /* Зеленый цвет фона */
+}
+
+.linkWrapper:hover .whatsAppLink {
+  transform: translateX(-150px); /* Сдвиг иконки влево */
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.linkWrapper:hover .linkText {
+  left: 0px; /* Появление текста */
+  opacity: 1;
 }
 
 @media (max-width: 500px) {

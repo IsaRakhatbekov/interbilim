@@ -50,3 +50,11 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 1120px) {
+  .structure {
+    .text {
+      font-size: 16px;
+    }
+  }
+}
