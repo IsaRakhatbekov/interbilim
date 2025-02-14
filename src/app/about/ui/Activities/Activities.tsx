@@ -13,12 +13,12 @@ import bottomItem6 from "@/public/bottom6-min.svg";
 import bottomItem7 from "@/public/bottom7-min.svg";
 import bottomItem8 from "@/public/bottom8-min.svg";
 
-import activitiesMidle1 from "@/public/activitiesmidle1.png"
-import activitiesMidle2 from "@/public/activitiesmidle2.png"
-import activitiesMidle3 from "@/public/activitiesmidle3.png"
-import activitiesMidle4 from "@/public/activitiesmidle4.png"
-import activitiesMidle5 from "@/public/activitiesmidle5.png"
-import activitiesMidle6 from "@/public/activitiesmidle6.png"
+import activitiesMidle1 from "@/public/activitiesmidle1.png";
+import activitiesMidle2 from "@/public/activitiesmidle2.png";
+import activitiesMidle3 from "@/public/activitiesmidle3.png";
+import activitiesMidle4 from "@/public/activitiesmidle4.png";
+import activitiesMidle5 from "@/public/activitiesmidle5.png";
+import activitiesMidle6 from "@/public/activitiesmidle6.png";
 
 export const Activities = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -30,9 +30,8 @@ export const Activities = () => {
   return (
     <section className={styles.activities}>
       <div className={`${styles.activitiesContainer} container`}>
-        <h2 className={`${styles.activitiesTitle} def-title`}>
-          Коротко о деятельности ИНТЕР
-          <span className={styles.titleSpan}>БИЛИМ</span>
+        <h2 className={`${styles.activitiesTitle} secondDef-title`}>
+          Коротко о нашей деятель<span>ности</span>
         </h2>
         <div className={styles.accordionWrapper}>
           <div className={styles.accordion}>
@@ -250,18 +249,18 @@ export const Activities = () => {
           <div className={styles.bottomWrapper}>
             <div className={styles.bottomContent}>
               <p className={styles.bottomText}>
-                «МЦ Интербилим», как первая в Кыргызстане НКО поддерживающая
-                организация, начала свою деятельность по содействию в создании и
-                регистрации, менеджменту и организационному управлению НКО с
-                информированием и обучением по новой концепции НКО сектора и
-                связанным с ним тем.
+                «МЦ Интербилим», как первая в Кыргызстане НКО поддерживающая
+                организация, начала свою деятельность по содействию в создании
+                и регистрации, менеджменту и организационному управлению
+                НКО с информированием и обучением по новой концепции НКО сектора
+                и связанным с ним тем.
               </p>
               <p className={styles.bottomText}>
-                За годы своей деятельности «МЦ Интербилим» обучил более 1200 НКО
-                с посещением от 1 до 10 сотрудников от каждой организации на
-                более 70 тем тренингов. «МЦ Интербилим» совместно с Ошским
-                филиалом «МЦ Интербилим» осуществил 88 проектов по различным
-                тематикам с 1994 по 2024 гг.
+                За годы своей деятельности «МЦ Интербилим» обучил более
+                1200 НКО с посещением от 1 до 10 сотрудников от каждой
+                организации на более 70 тем тренингов. «МЦ Интербилим» совместно
+                с Ошским филиалом «МЦ Интербилим» осуществил 88 проектов
+                по различным тематикам с 1994 по 2024 гг.
               </p>
             </div>
             <div className={styles.bottomImg}>
@@ -269,10 +268,10 @@ export const Activities = () => {
             </div>
           </div>
           <p className={styles.bottomText}>
-            «МЦ Интербилим» реализовал проектную деятельность в различных
-            направлениях для оказания содействия в повышении образовательного,
-            правового уровня своих бенефициариев, вовлекая их в проектную
-            деятельность и общественную жизнь.
+            «МЦ Интербилим» реализовал проектную деятельность в различных
+            направлениях для оказания содействия в повышении образовательного,
+            правового уровня своих бенефициариев, вовлекая их в проектную
+            деятельность и общественную жизнь.
           </p>
           <ul className={styles.bottomList}>
             <li className={styles.bottomItem}>
@@ -398,34 +397,34 @@ export const Activities = () => {
             </li>
           </ul>
           <p className={styles.bottomText}>
-            Проекты, осуществленные «МЦ Интербилим» внесли значительный вклад в
-            развитие НКО сектора, различных сфер жизнедеятельности общества,
-            оказали реальную помощь различным слоям населения и государству.
-            Прежде всего, с учетом осуществленной деятельности «МЦ Интербилим»
-            был внесен определенный вклад в человеческий капитал через повышение
-            знаний и навыков, влияющего на здоровье обученного населения, и
-            широкий охват бенефициариев в свои проекты, повышая Индекс
-            человеческого капитала страны.
+            Проекты, осуществлённые «МЦ Интербилим», внесли значительный вклад
+            в развитие НКО сектора, различных сфер жизнедеятельности общества,
+            оказали реальную помощь различным слоям населения и государству.
+            Прежде всего, с учётом осуществлённой деятельности, «МЦ Интербилим»
+            был внесён определённый вклад в человеческий капитал через повышение
+            знаний и навыков, влияющий на здоровье обученного населения, широкий
+            охват бенефициариев в свои проекты, повышая Индекс человеческого
+            капитала страны.
           </p>
           <div className={styles.activitiesImagesWrapper}>
-              <div className={styles.activitiesimg}>
-                  <Image src={activitiesMidle1} alt=""/>
-              </div>
-              <div className={styles.activitiesimg}>
-                  <Image src={activitiesMidle2} alt=""/>
-              </div>
-              <div className={styles.activitiesimg}>
-                  <Image src={activitiesMidle3} alt=""/>
-              </div>
-              <div className={styles.activitiesimg}>
-                  <Image src={activitiesMidle4} alt=""/>
-              </div>
-              <div className={styles.activitiesimg}>
-                  <Image src={activitiesMidle5} alt=""/>
-              </div>
-              <div className={styles.activitiesimg}>
-                  <Image src={activitiesMidle6} alt=""/>
-              </div>
+            <div className={styles.activitiesimg}>
+              <Image src={activitiesMidle1} alt="" />
+            </div>
+            <div className={styles.activitiesimg}>
+              <Image src={activitiesMidle2} alt="" />
+            </div>
+            <div className={styles.activitiesimg}>
+              <Image src={activitiesMidle3} alt="" />
+            </div>
+            <div className={styles.activitiesimg}>
+              <Image src={activitiesMidle4} alt="" />
+            </div>
+            <div className={styles.activitiesimg}>
+              <Image src={activitiesMidle5} alt="" />
+            </div>
+            <div className={styles.activitiesimg}>
+              <Image src={activitiesMidle6} alt="" />
+            </div>
           </div>
         </div>
       </div>

@@ -19,8 +19,8 @@ export const CooperationSection = () => {
           </h2>
 
           <p className={styles.subtitle}>
-            Присоединяйтесь к нашей миссии! Мы предлагаем три формата
-            сотрудничества, чтобы каждый мог внести свой вклад в развитие важных
+            Присоединяйтесь к нашей миссии! Мы предлагаем три формата
+            сотрудничества, чтобы каждый мог внести свой вклад в развитие важных
             инициатив.
           </p>
           <div className={styles.wrapper}>
@@ -32,49 +32,49 @@ export const CooperationSection = () => {
                   Пожерт<span>вование</span>
                 </h2>
                 <h3 className={styles.cooperationInnerSubtitle}>
-                  Поддержите наши инициативы, чтобы мы могли продолжать важную
+                  Поддержите наши инициативы, чтобы мы могли продолжать важную
                   работу.
                 </h3>
                 <ul className={styles.list}>
                   <li className={`${styles.item} ${styles.listTitle}`}>
-                    Что вы получите:
+                    Что вы получите:
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Уверенность, что ваш вклад идет на пользу важным делам.
+                      Уверенность, что ваш вклад идёт на пользу важным делам.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Благодарность от нашей команды и людей, которым мы
-                      помогаем.
+                      Благодарность от нашей команды и людей, которым
+                      мы помогаем.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Прозрачность в отчетах о распределении средств.
+                      Прозрачность в отчётах о распределении средств.
                     </p>
                   </li>
                 </ul>
                 <ul className={styles.list}>
                   <li className={`${styles.item} ${styles.listTitle}`}>
-                    Что нужно делать:{" "}
+                    Что нужно делать:
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Выбрать удобный способ для пожертвования (перевод,
-                      онлайн-платеж и др.).
+                      Выбрать удобный способ для пожертвования (перевод,
+                      онлайн-платёж и др.).
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Поддерживать проекты в области экологии, прав человека и
-                      развития гражданского общества.
+                      Поддерживать проекты в области экологии, прав человека
+                      и развития гражданского общества.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Разовая или регулярная поддержка – любой вклад важен!
+                      Разовая или регулярная поддержка — любой вклад важен!
                     </p>
                   </li>
                 </ul>
@@ -90,7 +90,7 @@ export const CooperationSection = () => {
                   Волонтер<span>ство</span>
                 </h2>
                 <h3 className={styles.cooperationInnerSubtitle}>
-                  Внесите свой вклад в реализацию наших проектов и получите
+                  Внесите свой вклад в реализацию наших проектов и получите
                   уникальный опыт.
                 </h3>
                 <ul className={styles.list}>
@@ -99,18 +99,18 @@ export const CooperationSection = () => {
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Уникальный опыт участия в общественно значимых проектах.
+                      Уникальный опыт участия в общественно значимых проектах.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Навыки, которые помогут вам развиваться как профессионалу
-                      и гражданину.
+                      Навыки, которые помогут вам развиваться как профессионалу
+                      и гражданину.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Возможность работать в команде единомышленников.
+                      Возможность работать в команде единомышленников.
                     </p>
                   </li>
                 </ul>
@@ -120,18 +120,18 @@ export const CooperationSection = () => {
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Помогать в организации мероприятий, тренингов и акций.
+                      Помогать в организации мероприятий, тренингов и акций.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Поддерживать проекты в области прав человека или развития
+                      Поддерживать проекты в области прав человека или развития
                       гражданского общества.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Вести коммуникацию с участниками и партнерами.
+                      Вести коммуникацию с участниками и партнёрами.
                     </p>
                   </li>
                 </ul>
@@ -154,8 +154,8 @@ export const CooperationSection = () => {
                   <span>Парт</span>нерство
                 </h2>
                 <h3 className={styles.cooperationInnerSubtitle}>
-                  Поддержите наши инициативы, чтобы мы могли продолжать важную
-                  работу.
+                  Вместе мы можем добиться большего, объединив усилия
+                  для достижения общих целей.
                 </h3>
                 <ul className={styles.list}>
                   <li className={`${styles.item} ${styles.listTitle}`}>
@@ -163,40 +163,35 @@ export const CooperationSection = () => {
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Уверенность, что ваш вклад идет на пользу важным делам.
+                      Совместное продвижение социальных инициатив.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Благодарность от нашей команды и людей, которым мы
-                      помогаем.
+                      Повышение узнаваемости бренда вашей организации
+                      через поддержку значимых социальных проектов.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Прозрачность в отчетах о распределении средств.
+                      Возможность показать ваш вклад в развитие общества.
                     </p>
                   </li>
                 </ul>
                 <ul className={styles.list}>
                   <li className={`${styles.item} ${styles.listTitle}`}>
-                    Что нужно делать:{" "}
+                    Что нужно делать:
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Выбрать удобный способ для пожертвования (перевод,
-                      онлайн-платеж и др.).
+                      Поддерживать наши проекты финансово, информационно,
+                      ресурсно или экспертно.
                     </p>
                   </li>
                   <li className={styles.item}>
                     <p className={styles.text}>
-                      Поддерживать проекты в области экологии, прав человека и
-                      развития гражданского общества.
-                    </p>
-                  </li>
-                  <li className={styles.item}>
-                    <p className={styles.text}>
-                      Разовая или регулярная поддержка – любой вклад важен!
+                      Участвовать в разработке и реализации совместных
+                      общественных инициатив.
                     </p>
                   </li>
                 </ul>
