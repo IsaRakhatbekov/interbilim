@@ -27,7 +27,7 @@ const SwiperComponent = () => {
     <div className={styles.swiperContainer}>
       <Swiper
         slidesPerView={2}
-        spaceBetween={20}
+        spaceBetween={10}
         // loop={true}
         breakpoints={{
           768: {

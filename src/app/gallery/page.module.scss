@@ -1,5 +1,5 @@
 .gallery {
-  padding: 0 0 200px;
+  padding: 0 0 400px;
   overflow: hidden;
 
   .galleryHero {
@@ -136,6 +136,8 @@
 
 @media (max-width: 991px) {
   .gallery {
+    padding: 0 0 300px;
+
     .imgWrapper,
     .videoWrapper {
       height: 200px;

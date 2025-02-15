@@ -83,16 +83,16 @@ const Header = () => {
               <Link href="/cooperation" className={styles.btn}>
                 Сотрудничество
               </Link>
-              <button
-                onClick={handleClickBurger}
-                className={`${styles.menuBtn} ${
-                  burger ? styles.menuBtnActive : ""
-                }`}
-              >
-                <span></span>
-              </button>
             </li>
           </ul>
+          <button
+            onClick={handleClickBurger}
+            className={`${styles.menuBtn} ${
+              burger ? styles.menuBtnActive : ""
+            }`}
+          >
+            <span></span>
+          </button>
 
           <div
             className={`${styles.menuBody} ${
@@ -155,6 +155,9 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+            <Link href="/cooperation" className={styles.btn}>
+              Сотрудничество
+            </Link>
           </div>
         </nav>
       </div>

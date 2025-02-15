@@ -276,9 +276,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className={`${styles.container} container`}>
-          <SwiperComponent />
-        </div>
+        <SwiperComponent />
       </section>
       <SecondFooter />
     </>

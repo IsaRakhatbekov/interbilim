@@ -7,12 +7,10 @@ const SecondFooter = () => {
     <footer className={styles.secondFooter}>
       <div className={`${styles.footerContainer} container`}>
         <nav className={styles.nav}>
+          <a className={styles.logo} href="#">
+            <Image src={logo} alt="" priority={false} />
+          </a>
           <ul className={styles.list}>
-            <li className={styles.item}>
-              <a className={styles.logo} href="#">
-                <Image src={logo} alt="" priority={false} />
-              </a>
-            </li>
             <li className={`${styles.item} ${styles.linksWrapper}`}>
               <h5 className={styles.title}>Разделы</h5>
               <a className={styles.link} href="#">

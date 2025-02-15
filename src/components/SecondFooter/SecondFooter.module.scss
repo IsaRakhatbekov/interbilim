@@ -14,7 +14,14 @@
     z-index: -1;
   }
 
+  .nav {
+    display: flex;
+    gap: 70px;
+    justify-content: space-evenly;
+  }
+
   .logo {
+    display: inline-block;
     width: 255px;
     height: 175px;
     overflow: hidden;
@@ -29,8 +36,7 @@
   .list {
     gap: 70px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .item {
@@ -47,10 +53,54 @@
   }
 
   .contacts {
+    width: 100%;
     max-width: 270px;
 
     & .link {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .secondFooter {
+    &::after {
+      height: 178%;
+      top: -77%;
+    }
+
+    .nav {
+      gap: 40px;
+    }
+
+    .logo {
+      width: 118px;
+      height: 80px;
+    }
+
+    .list {
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .secondFooter {
+    &::after {
+      height: 164%;
+      top: -64%;
+    }
+    .nav {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .secondFooter {
+    .list {
+      flex-wrap: wrap;
+      justify-content: flex-start;
     }
   }
 }

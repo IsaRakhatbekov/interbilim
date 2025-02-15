@@ -10,8 +10,8 @@
 
   .slide {
     width: 100%;
-    max-width: 370px;
-    height: 350px;
+    max-width: 435px;
+    height: 400px;
     overflow: hidden;
 
     & img {
@@ -33,12 +33,12 @@
 @media (max-width: 991px) {
   .swiperContainer {
     .slide {
-      height: 200px;
+      height: 280px;
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .swiperContainer {
     .slide {
       height: 150px;

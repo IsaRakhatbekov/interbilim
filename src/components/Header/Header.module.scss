@@ -118,6 +118,10 @@
     .menuLink {
       font-size: 20px;
     }
+
+    .btn {
+      margin: 10px auto 0;
+    }
   }
 
   .menuBodyActive {
@@ -134,28 +138,17 @@
 
 @media (max-width: 1200px) {
   .header {
-    .logo {
-      width: 140px;
-      height: 80px;
-      margin-right: 20px;
-    }
     .list {
       gap: 20px;
     }
     .btn {
       font-size: 16px;
-      padding: 15px 15px;
     }
   }
 }
 
 @media (max-width: 991px) {
   .header {
-    .logo {
-      width: 95px;
-      height: 65px;
-    }
-
     .list {
       margin-right: 0;
     }
@@ -164,7 +157,7 @@
     }
 
     .btn {
-      padding: 8px 10px;
+      padding: 8px 15px;
     }
   }
 }
