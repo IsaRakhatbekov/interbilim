@@ -8,6 +8,9 @@ const Publications = () => {
     <>
       <section className={styles.publications}>
         <div className={`${styles.container} container`}>
+          <h2 className={`${styles.title} secondDef-title`}>
+            Публика<span>ции</span>
+          </h2>
           <div className={styles.wrapper}>
             <div className={styles.list}>
               {publicationsCard.left.map((publications, index) => (

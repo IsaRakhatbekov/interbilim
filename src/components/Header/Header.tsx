@@ -155,7 +155,11 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <Link href="/cooperation" className={styles.btn}>
+            <Link
+              onClick={handleClickBurgerClose}
+              href="/cooperation"
+              className={styles.btn}
+            >
               Сотрудничество
             </Link>
           </div>

@@ -13,3 +13,20 @@
     gap: 30px;
   }
 }
+
+@media (max-width: 1200px) {
+  .publications {
+    .title {
+      font-size: 50px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .publications {
+    padding: 150px 0;
+    .title {
+      font-size: 40px;
+    }
+  }
+}
