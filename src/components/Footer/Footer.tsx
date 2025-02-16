@@ -131,13 +131,13 @@ const Footer = () => {
             <li className={`${styles.item} ${styles.languages}`}>
               <h5 className={styles.title}>Языки</h5>
               <a className={styles.link} href="#">
-                English
+                Кыргызча
               </a>
               <a className={styles.link} href="#">
                 Русский
               </a>
               <a className={styles.link} href="#">
-                Кыргызча
+                English
               </a>
             </li>
           </ul>

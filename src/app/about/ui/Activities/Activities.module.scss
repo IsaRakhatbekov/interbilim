@@ -51,6 +51,23 @@
     opacity: 1;
   }
 
+  .accordionBtn {
+    span {
+      transition: transform 0.3s ease;
+
+      svg {
+        transition: transform 0.3s ease;
+        transform-origin: center;
+      }
+    }
+
+    .activeSpan {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
   // BOTTOM STARTS
   .bottom {
     .bottomWrapper {

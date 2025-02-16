@@ -4,8 +4,11 @@ const Structure = () => {
   return (
     <div className={styles.structure}>
       <div className={`${styles.structureContainer} container`}>
+        <h2 className={`${styles.title} secondDef-title`}>
+          Струк<span>тура</span> организации
+        </h2>
         <div className={styles.wrapper}>
-          <div className={`${styles.list} ${styles.firstList}`}>
+          {/* <div className={`${styles.list} ${styles.firstList}`}>
             <div className={`${styles.item} ${styles.firstItem}`}>
               <p className={styles.text}>Общее собрание</p>
             </div>
@@ -42,7 +45,7 @@ const Structure = () => {
             <div className={`${styles.item} ${styles.tenthItem}`}>
               <p className={styles.text}>Юрист</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
