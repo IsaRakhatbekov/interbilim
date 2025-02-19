@@ -20,7 +20,7 @@ const page = () => {
                   href="#"
                   target="_blank"
                 >
-                  Кыргызстан, 720010, г. Бишкек, ул. Уметалиева, 27
+                  Кыргызстан, 720010, г. Бишкек <br /> ул. Уметалиева, 27
                 </a>
                 <h4 className={styles.innerTitle}>Веб-страница</h4>
                 <a
@@ -28,7 +28,7 @@ const page = () => {
                   href="https://interbilim.kg"
                   target="_blank"
                 >
-                  https://interbilim.kg
+                  Interbilim.kg
                 </a>
               </li>
               <li className={`${styles.phoneWrapper} ${styles.item}`}>
@@ -253,7 +253,7 @@ const page = () => {
                   href="#"
                   target="_blank"
                 >
-                  Кыргызстан, 723500 г. Ош ул. Ленина 335/11
+                  Кыргызстан, 723500 г. Ош <br /> ул. Ленина 335/11
                 </a>
                 <h4 className={styles.innerTitle}>Веб-страница</h4>
                 <a
@@ -261,7 +261,7 @@ const page = () => {
                   href="https://interbilim.kg"
                   target="_blank"
                 >
-                  https://interbilim.kg
+                  Interbilim.kg
                 </a>
               </li>
               <li className={`${styles.phoneWrapper} ${styles.item}`}>

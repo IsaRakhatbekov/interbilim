@@ -32,12 +32,13 @@ const SecondFooter = () => {
             <li className={`${styles.item} ${styles.contacts}`}>
               <h5 className={styles.title}>Контакты</h5>
               <a className={styles.link} href="#">
-                г. Бишкек, ул. Уметалиева, 27 Тел: +996 (553) 602 375 Эл.почта:
-                interbilim@gmail.com
+                г. Бишкек, ул. Уметалиева, 27 <br />
+                Тел: +996 (553) 602 375 <br />
+                Эл.почта: interbilim@gmail.com
               </a>
               <a className={styles.link} href="#">
-                г. Ош ул. Ленина 335/11 Тел: +996 (3222) 2-29-52 Эл.почта:
-                interbilim.osh@gmail.com
+                г. Ош ул. Ленина 335/11 <br /> Тел: +996 (3222) 2-29-52 <br />{" "}
+                Эл.почта: interbilim.osh@gmail.com
               </a>
             </li>
             <li className={`${styles.item} ${styles.social}`}>

@@ -26,8 +26,7 @@ const Footer = () => {
               </a>
               <a className={styles.link} href="#">
                 Публикации
-              </a>
-              <a className={styles.link} href="#">
+                <a className={styles.link} href="#"></a>
                 Галерея
               </a>
             </li>
@@ -47,7 +46,8 @@ const Footer = () => {
               <h5 className={styles.title}>Мы в соц. сетях</h5>
               <a
                 className={`${styles.link} ${styles.socialLinksWrapper}`}
-                href="#"
+                href="https://www.facebook.com/interbilimngo"
+                target="_blank"
               >
                 <span>
                   <svg
@@ -67,7 +67,8 @@ const Footer = () => {
               </a>
               <a
                 className={`${styles.link} ${styles.socialLinksWrapper}`}
-                href="#"
+                href="https://www.instagram.com/interbilim.kg?igsh=MWtnbXlrdnU5OHZ0cA=="
+                target="_blank"
               >
                 <span>
                   <svg
@@ -87,7 +88,8 @@ const Footer = () => {
               </a>
               <a
                 className={`${styles.link} ${styles.socialLinksWrapper}`}
-                href="#"
+                href="tel:+996553602375"
+                target="_blank"
               >
                 <span>
                   <svg

@@ -5,6 +5,14 @@ import values2 from "@/public/interbilim/values2.png";
 import values3 from "@/public/interbilim/values3.png";
 import reviews1 from "@/public/interbilim/reviews1.png";
 import reviews2 from "@/public/interbilim/reviews2.png";
+import reviews3 from "@/public/interbilim/reviews3.jpg";
+import reviews4 from "@/public/interbilim/reviews4.jpg";
+import reviews5 from "@/public/interbilim/reviews5.png";
+import reviews6 from "@/public/interbilim/reviews6.png";
+import reviews7 from "@/public/interbilim/reviews7.png";
+import reviews8 from "@/public/interbilim/reviews8.png";
+import reviews9 from "@/public/interbilim/reviews9.jpg";
+import reviews10 from "@/public/interbilim/reviews10.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -165,6 +173,27 @@ const Interbilim = () => {
                 <div className={styles.reviewsCard}>
                   <div className={styles.reviewsImageWrapper}>
                     <div className={styles.reviewsImgWrapper}>
+                      <Image src={reviews2} alt="" />
+                    </div>
+                    <h5 className={styles.reviewsName}>Файруза Самидинова</h5>
+                  </div>
+                  <div className={styles.reviewsContent}>
+                    <p className={styles.reviewsText}>
+                      Было очень интересно принять участие в проекте в качестве
+                      тренера, хорошая организация, доброжелательная, комфортная
+                      обстановка, я очень была рада также пообщаться с коллегами
+                      из других городов, получила массу полезной и нужной
+                      информации. А самое важное для меня было то,
+                      что это действительно нужный и важный лагерь
+                      для подростков и молодёжи нашего города.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={styles.reviewsCard}>
+                  <div className={styles.reviewsImageWrapper}>
+                    <div className={styles.reviewsImgWrapper}>
                       <Image src={reviews1} alt="" />
                     </div>
                     <h5 className={styles.reviewsName}>Мирбек Асангариев</h5>
@@ -198,19 +227,185 @@ const Interbilim = () => {
                 <div className={styles.reviewsCard}>
                   <div className={styles.reviewsImageWrapper}>
                     <div className={styles.reviewsImgWrapper}>
-                      <Image src={reviews2} alt="" />
+                      <Image src={reviews3} alt="" />
                     </div>
-                    <h5 className={styles.reviewsName}>Мирбек Асангариев</h5>
+                    <h5 className={styles.reviewsName}>name</h5>
                   </div>
                   <div className={styles.reviewsContent}>
                     <p className={styles.reviewsText}>
-                      Было очень интересно принять участие в проекте в качестве
-                      тренера, хорошая организация, доброжелательная, комфортная
-                      обстановка, я очень была рада также пообщаться с коллегами
-                      из других городов, получила массу полезной и нужной
-                      информации. А самое важное для меня было то,
-                      что это действительно нужный и важный лагерь
-                      для подростков и молодёжи нашего города.
+                      «МЦ Интербилим» - это площадка, где молодежь может
+                      развиваться. Лично для меня «МЦ Интербилим» находится
+                      отдельно в моем сердце, потому что я нашел новых друзей и
+                      реализовал себя». Карим Ва- Ахунов, участник Лагеря
+                      Демократии проекта «Жаш – Аракет», г. Токмок.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={styles.reviewsCard}>
+                  <div className={styles.reviewsImageWrapper}>
+                    <div className={styles.reviewsImgWrapper}>
+                      <Image src={reviews4} alt="" />
+                    </div>
+                    <h5 className={styles.reviewsName}>
+                      Ыдырыс Исаков, журналист.
+                    </h5>
+                  </div>
+                  <div className={styles.reviewsContent}>
+                    <p className={styles.reviewsText}>
+                      В Оше есть общественная организация «МЦ Интербилим». По ее
+                      инициативе городские власти стали ежегодно отчитываться
+                      перед жителями о том, что они делают и чего не делают,
+                      куда и как расходуют бюджетные средства. Именно по
+                      инициативе этой организации городские власти стали
+                      узнавать о предназначении средств, собираемых в городскую
+                      казну, и реальных потребностях населения. Да будет «МЦ
+                      Интербилим»!
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={styles.reviewsCard}>
+                  <div className={styles.reviewsImageWrapper}>
+                    <div className={styles.reviewsImgWrapper}>
+                      <Image src={reviews5} alt="" />
+                    </div>
+                    <h5 className={styles.reviewsName}>
+                      Гульшаир Абдирасулова
+                    </h5>
+                  </div>
+                  <div className={styles.reviewsContent}>
+                    <p className={styles.reviewsText}>
+                      «В «Школе Лидерства» больше всего мне запомнилось
+                      несколько моментов. Игра «Шляпы» была очень интересной!
+                      Участникам раздали несколько шляп, в зависимости от
+                      которых нужно было тем или иным образом реагировать на
+                      ситуации: «думающая шляпа», «разгневанная шляпа»,
+                      «логичная шляпа» и прочие. Это очень просто, игра показала
+                      мне, как легко можно контролировать свои эмоции в
+                      зависимости от обстоятельств. По окончании Школы
+                      участникам была предоставлена возможность реализовать
+                      собственные проекты. Это также было для меня ценным
+                      опытом».
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={styles.reviewsCard}>
+                  <div className={styles.reviewsImageWrapper}>
+                    <div className={styles.reviewsImgWrapper}>
+                      <Image src={reviews6} alt="" />
+                    </div>
+                    <h5 className={styles.reviewsName}>Нурбек Омурзаков</h5>
+                  </div>
+                  <div className={styles.reviewsContent}>
+                    <p className={styles.reviewsText}>
+                      «Я закончил «Школу лидерства» в Бишкеке в 2009 году. Тогда
+                      мне понравилась сама идея обучения и воспитания лидеров
+                      нового поколения, ее я решил, слегка изменив, реализовать
+                      в своем районе. Из обучения же в Бишкеке больше всего мне
+                      запомнился профессионализм тренеров и встречи с уже
+                      состоявшимися лидерами».
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={styles.reviewsCard}>
+                  <div className={styles.reviewsImageWrapper}>
+                    <div className={styles.reviewsImgWrapper}>
+                      <Image src={reviews7} alt="" />
+                    </div>
+                    <h5 className={styles.reviewsName}>Чинара Айтбаева</h5>
+                  </div>
+                  <div className={styles.reviewsContent}>
+                    <p className={styles.reviewsText}>
+                      «Когда я подавала заявку на обучение в Школе Лидерства в
+                      2006 году, мои коллеги говорили: «Зачем подавать заявку?
+                      Ты уже и так лидер!», я отвечала: «Учиться никогда не
+                      поздно». Я не пожалела, что пришла учиться в этой школе,
+                      так как во время обучения узнала много интересного и
+                      важного для моей работы, съездила в Польшу в рамках
+                      образовательной тура по обмену опытом. Особенно мне
+                      запомнились тренинги Александра Кулинского о съемках
+                      роликов, психолога Михаила Мунькина о том, как распознать
+                      человека при первом разговоре, встречи с руководителями
+                      бизнес структур и политическими лидерами. Все это
+                      проходило в такой легко усваиваемой форме. Иногда я ловлю
+                      себя на мысли, что спустя годы я применяю в работе
+                      некоторые знания и навыки, полученные в Школе».
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={styles.reviewsCard}>
+                  <div className={styles.reviewsImageWrapper}>
+                    <div className={styles.reviewsImgWrapper}>
+                      <Image src={reviews8} alt="" />
+                    </div>
+                    <h5 className={styles.reviewsName}>Марс Черикчиев</h5>
+                  </div>
+                  <div className={styles.reviewsContent}>
+                    <p className={styles.reviewsText}>
+                      «Очень горжусь Интербилимом и в том, что являюсь
+                      выпускником Школы Лидерства».
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={styles.reviewsCard}>
+                  <div className={styles.reviewsImageWrapper}>
+                    <div className={styles.reviewsImgWrapper}>
+                      <Image src={reviews9} alt="" />
+                    </div>
+                    <h5 className={styles.reviewsName}>Карипова Эльвира</h5>
+                  </div>
+                  <div className={styles.reviewsContent}>
+                    <p className={styles.reviewsText}>
+                      «С «МЦ Интербилим» я познакомилась еще, будучи студенткой
+                      первого курса. Я смогла пройти отбор для участия в ряде
+                      его тренингов по проекту «Демократия и молодежь». Эти
+                      тренинги усилили мои знания и, конечно, при раннем
+                      трудоустройстве я отличалась от своих сверстников. Так
+                      начиная с 4- го курса, я начала работать с международными
+                      проектами. Большую лепту в моем карьерном росте сыграло
+                      также участие в «Школе Лидерства 2009». Так я открыла для
+                      себя «МЦ Интербилим» с внутренней стороны и была
+                      воодушевлена работой интербилимовцев».
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={styles.reviewsCard}>
+                  <div className={styles.reviewsImageWrapper}>
+                    <div
+                      className={`${styles.reviewsImgWrapper} ${styles.reviewsImgWrapperLast}`}
+                    >
+                      <Image src={reviews10} alt="" />
+                    </div>
+                    <h5 className={styles.reviewsName}>Мирсулжан Намазалиев</h5>
+                  </div>
+                  <div className={styles.reviewsContent}>
+                    <p className={styles.reviewsText}>
+                      «Школа Лидерства» действительно наращивает потенциал
+                      активистов гражданского сектора, создает возможности для
+                      получения практичных знаний, а также для реализации
+                      основных идей участников. Более того, это площадка для
+                      настоящего нетворкинга, где каждый участник становится
+                      твоим другом, соратником и партнером в настоящем и
+                      будущем. Я думаю, никто другой, кроме как «Международный
+                      Центр Интербилим», не сделает эту программу столь важной и
+                      эффективной. Я помню, как еще в период авторитарного
+                      режима, мы все же имели возможность встречаться с
+                      совершенно разными политиками, чиновниками, задавать им
+                      открытые и каверзные вопросы, получать и уяснять для себя
+                      весьма важную и ценную информацию и знания».
                     </p>
                   </div>
                 </div>
