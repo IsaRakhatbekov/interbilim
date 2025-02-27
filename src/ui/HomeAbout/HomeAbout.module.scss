@@ -6,22 +6,6 @@
   overflow: hidden;
   z-index: -1;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 700px;
-    top: 35%;
-    z-index: 0;
-    background: url("../../../public/ornament.png") center/cover no-repeat;
-  }
-
-  &::after {
-    right: 0;
-    transform: rotate(180deg);
-  }
-
   .acquaintance {
     margin-bottom: 100px;
     overflow: hidden;
@@ -278,12 +262,6 @@
 
 @media (max-width: 500px) {
   .about {
-    &::before,
-    &::after {
-      width: 200px;
-      height: 400px;
-      top: 54%;
-    }
     .partners {
       .partnersText {
         font-size: 18px;

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Footer.module.scss";
 import logo from "@/public/footerLogo.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -15,32 +16,38 @@ const Footer = () => {
             </li>
             <li className={`${styles.item} ${styles.linksWrapper}`}>
               <h5 className={styles.title}>Разделы</h5>
-              <a className={styles.link} href="#">
+              <Link className={styles.link} href="/">
                 Главная
-              </a>
-              <a className={styles.link} href="#">
+              </Link>
+              <Link className={styles.link} href="/about">
                 О нас
-              </a>
-              <a className={styles.link} href="#">
+              </Link>
+              <Link className={styles.link} href="/ourProjects">
                 Проекты
-              </a>
-              <a className={styles.link} href="#">
+              </Link>
+              <Link className={styles.link} href="/publications">
                 Публикации
-                <a className={styles.link} href="#"></a>
+              </Link>
+              <Link className={styles.link} href="/gallery">
                 Галерея
-              </a>
+              </Link>
             </li>
             <li className={`${styles.item} ${styles.contacts}`}>
               <h5 className={styles.title}>Контакты</h5>
-              <a className={styles.link} href="#">
-                г. Бишкек, ул. Уметалиева, 27 <br /> Тел: +996 (553) 602 375{" "}
+              <p className={styles.link}>
+                г. Бишкек, ул. Уметалиева, 27
+                <br />
+                Тел: +996 (553) 602 375
                 <br />
                 Эл.почта: interbilim@gmail.com
-              </a>
-              <a className={styles.link} href="#">
-                г. Ош ул. Ленина 335/11 <br /> Тел: +996 (3222) 2-29-52 <br />
+              </p>
+              <p className={styles.link}>
+                г. Ош ул. Ленина 335/11
+                <br />
+                Тел: +996 (322) 22-29-52
+                <br />
                 Эл.почта: interbilim.osh@gmail.com
-              </a>
+              </p>
             </li>
             <li className={`${styles.item} ${styles.social}`}>
               <h5 className={styles.title}>Мы в соц. сетях</h5>
@@ -88,7 +95,7 @@ const Footer = () => {
               </a>
               <a
                 className={`${styles.link} ${styles.socialLinksWrapper}`}
-                href="tel:+996553602375"
+                href="https://wa.me/996553602375"
                 target="_blank"
               >
                 <span>

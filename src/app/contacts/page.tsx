@@ -15,20 +15,8 @@ const page = () => {
             <ul className={styles.content}>
               <li className={`${styles.addressWrapper} ${styles.item}`}>
                 <h4 className={styles.innerTitle}>Адрес</h4>
-                <a
-                  className={`${styles.address} ${styles.text}`}
-                  href="#"
-                  target="_blank"
-                >
+                <a className={styles.text} href="#" target="_blank">
                   Кыргызстан, 720010, г. Бишкек <br /> ул. Уметалиева, 27
-                </a>
-                <h4 className={styles.innerTitle}>Веб-страница</h4>
-                <a
-                  className={`${styles.address} ${styles.text}`}
-                  href="https://interbilim.kg"
-                  target="_blank"
-                >
-                  Interbilim.kg
                 </a>
               </li>
               <li className={`${styles.phoneWrapper} ${styles.item}`}>
@@ -54,8 +42,20 @@ const page = () => {
               </li>
               <li className={`${styles.gmailWrapper} ${styles.item}`}>
                 <h4 className={styles.innerTitle}>E-mail адрес</h4>
-                <a className={`${styles.gmail} ${styles.text}`} href="#">
+                <a
+                  className={`${styles.gmail} ${styles.text}`}
+                  href="mailto:interbilim@gmail.com"
+                  target="_blank"
+                >
                   interbilim@gmail.com
+                </a>
+                <h4 className={styles.innerTitle}>Веб-страница</h4>
+                <a
+                  className={`${styles.address} ${styles.text}`}
+                  href="https://interbilim.kg"
+                  target="_blank"
+                >
+                  https://interbilim.kg.kg
                 </a>
               </li>
               <li className={`${styles.socialWrapper} ${styles.item}`}>
@@ -248,21 +248,10 @@ const page = () => {
             <ul className={styles.content}>
               <li className={`${styles.addressWrapper} ${styles.item}`}>
                 <h4 className={styles.innerTitle}>Адрес</h4>
-                <a
-                  className={`${styles.address} ${styles.text}`}
-                  href="#"
-                  target="_blank"
-                >
+                <a className={styles.text} href="#" target="_blank">
                   Кыргызстан, 723500 г. Ош <br /> ул. Ленина 335/11
                 </a>
                 <h4 className={styles.innerTitle}>Веб-страница</h4>
-                <a
-                  className={`${styles.address} ${styles.text}`}
-                  href="https://interbilim.kg"
-                  target="_blank"
-                >
-                  Interbilim.kg
-                </a>
               </li>
               <li className={`${styles.phoneWrapper} ${styles.item}`}>
                 <h4 className={styles.innerTitle}>Телефоны</h4>
@@ -281,8 +270,20 @@ const page = () => {
               </li>
               <li className={`${styles.gmailWrapper} ${styles.item}`}>
                 <h4 className={styles.innerTitle}>E-mail адрес</h4>
-                <a className={`${styles.gmail} ${styles.text}`} href="#">
+                <a
+                  className={`${styles.gmail} ${styles.text}`}
+                  href="mailto:interbilim.osh@gmail.com"
+                  target="_blank"
+                >
                   interbilim.osh@gmail.com
+                </a>
+                <h4 className={styles.innerTitle}>Веб-страница</h4>
+                <a
+                  className={`${styles.address} ${styles.text}`}
+                  href="https://interbilim.kg"
+                  target="_blank"
+                >
+                  https://interbilim.kg.kg
                 </a>
               </li>
               <li className={`${styles.socialWrapper} ${styles.item}`}>

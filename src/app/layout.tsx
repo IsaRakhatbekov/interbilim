@@ -124,7 +124,11 @@ export default function RootLayout({
         <div className=".page-wrapper">
           <Header />
           <main>{children}</main>
-          <a className="linkWrapper" href="tel:+996553602375" target="_blank">
+          <a
+            className="linkWrapper"
+            href="https://wa.me/996553602375"
+            target="_blank"
+          >
             <div className="whatsAppLink">
               <svg
                 viewBox="0 0 50 50"

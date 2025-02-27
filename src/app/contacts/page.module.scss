@@ -46,21 +46,18 @@
   }
 
   .text {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 1.2em;
-    color: #2c2e31;
-  }
-
-  .gmail {
-    color: #5f94e4;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
   }
 
   .socialLinks {
     gap: 10px;
     display: flex;
     align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
 
     & svg {
       width: 25px !important;
@@ -80,6 +77,24 @@
       height: 100%;
       object-fit: contain;
     }
+  }
+
+  .phoneNUmber {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #2c2e31;
+  }
+
+  .gmail,
+  .address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #5f94e4;
   }
 }
 

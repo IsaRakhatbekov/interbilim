@@ -1,15 +1,15 @@
 .partners {
-  padding: 300px 0 350px;
+  padding: 300px 0 300px;
 
   .partnersTitle {
     margin-bottom: 40px;
   }
 
   .list {
-    gap: 50px 70px;
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -30,16 +30,22 @@
 
 @media (max-width: 768px) {
   .partners {
-    .list {
-      gap: 40px;
-      justify-content: space-evenly;
+    padding: 100px 0;
+
+    .partnersTitle {
+      font-size: 40px;
+      & span {
+        font-size: 40px;
+      }
     }
   }
 }
 
 @media (max-width: 500px) {
   .partners {
+    padding: 50px 0 100px;
     .list {
+      gap: 10px;
       flex-wrap: wrap;
     }
 

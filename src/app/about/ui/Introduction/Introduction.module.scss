@@ -10,9 +10,12 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.3em;
+    line-height: 1.5em;
     text-align: justify;
     color: var(--chernyy);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .introductionTextTop {
@@ -24,6 +27,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 
     .archiveImageWrapper {
       & span {
@@ -51,14 +57,17 @@
 
     .archiveTitle {
       font-weight: 500;
-      font-size: 25px;
-      line-height: 1.2em;
-      text-align: justify;
+      font-size: 20px;
+      line-height: 1.5em;
       margin-bottom: 10px;
     }
   }
 
   .audience {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
     .audienceTop {
       margin: 50px 0;
       gap: 40px;
@@ -86,11 +95,19 @@
     }
 
     .audienceList {
-      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 10px;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+    }
+
+    .audienceImageWrapper {
+      width: 100%;
+      max-width: 300px;
+      overflow: hidden;
     }
   }
 }
@@ -117,9 +134,16 @@
     }
 
     .audience {
+      .audienceTop {
+        margin: 25px 0;
+      }
       .audienceImg {
         width: 100%;
         max-width: 400px;
+      }
+
+      .audienceImageWrapper {
+        height: 200px;
       }
     }
   }
@@ -135,8 +159,12 @@
         font-size: 40px;
       }
     }
+    .introductionText {
+      max-width: 580px;
+    }
     .archive {
       flex-direction: column;
+      margin-bottom: 20px;
 
       .archiveImg {
         width: 100%;
@@ -147,9 +175,11 @@
       .audienceTop {
         flex-direction: column;
         margin-bottom: 20px;
+        width: 100%;
+        max-width: 580px;
+        margin: 40px auto;
       }
 
-      .audienceImageWrapper,
       .audienceImg {
         width: 100%;
         max-width: 400px;
@@ -160,6 +190,35 @@
           height: 100%;
           object-fit: cover;
         }
+      }
+
+      .audienceImageWrapper {
+        height: 150px;
+
+        & img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .introduction {
+    .audience {
+      .audienceTop {
+        margin-bottom: 10px;
+      }
+      .audienceImg {
+        max-width: 300px;
+      }
+      .audienceList {
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .audienceImageWrapper {
+        margin: 0 auto;
       }
     }
   }

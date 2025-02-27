@@ -13,6 +13,14 @@
     z-index: -1;
   }
 
+  .link {
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--color-red);
+    }
+  }
+
   .logo {
     width: 255px;
     height: 175px;
@@ -49,6 +57,11 @@
 
     & .link {
       margin-bottom: 30px;
+
+      &:hover {
+        cursor: default;
+        color: var(--color-white);
+      }
     }
   }
 
@@ -114,8 +127,23 @@
 
 @media (max-width: 500px) {
   .footer {
+    .item {
+      margin-bottom: 30px;
+    }
+
     .list {
+      gap: 10px;
       flex-direction: column;
+    }
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    .contacts {
+      .link {
+        margin-bottom: 10px;
+      }
     }
   }
 }

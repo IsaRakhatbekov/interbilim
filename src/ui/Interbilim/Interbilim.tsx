@@ -363,7 +363,7 @@ const Interbilim = () => {
                     <div className={styles.reviewsImgWrapper}>
                       <Image src={reviews9} alt="" />
                     </div>
-                    <h5 className={styles.reviewsName}>Карипова Эльвира</h5>
+                    <h5 className={styles.reviewsName}>Эльвира Карипова</h5>
                   </div>
                   <div className={styles.reviewsContent}>
                     <p className={styles.reviewsText}>
