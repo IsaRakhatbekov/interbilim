@@ -23,54 +23,6 @@
     flex-direction: column;
   }
 
-  .accordion {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background-color: #f3f0e9;
-    padding: 15px 70px;
-  }
-
-  .accordionBtn {
-    text-align-last: left;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .accordionDesc {
-    max-height: 0;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-    padding: 0 10px;
-    transition: all 0.3s ease;
-  }
-
-  .accordionActive {
-    max-height: 200px;
-    padding: 20px 10px;
-    overflow-y: auto;
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .accordionBtn {
-    span {
-      transition: transform 0.3s ease;
-
-      svg {
-        transition: transform 0.3s ease;
-        transform-origin: center;
-      }
-    }
-
-    .activeSpan {
-      svg {
-        transform: rotate(180deg);
-      }
-    }
-  }
-
   // BOTTOM STARTS
   .bottom {
     .bottomWrapper {

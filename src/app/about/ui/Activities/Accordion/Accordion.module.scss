@@ -1,0 +1,103 @@
+.accordionWrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.accordion {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background: var(--fon);
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+
+  &.active {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: left;
+  }
+
+  .arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid var(--color-black);
+    border-bottom: 3px solid var(--color-black);
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+
+    &.rotated {
+      transform: rotate(225deg);
+    }
+  }
+
+  .accordionContent {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+
+    &.active {
+      height: auto;
+      opacity: 1;
+      padding: 10px 0;
+    }
+  }
+
+  .desc {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin-bottom: 15px;
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+
+  .image {
+    margin-top: 10px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+
+  .listWithArrow {
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-color: var(--color-black);
+    }
+  }
+
+  .listWithNumbers {
+    padding-left: 40px;
+  }
+}
