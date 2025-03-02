@@ -1,103 +1,123 @@
-.accordionWrapper {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .accordion {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: var(--fon);
-  padding: 15px 20px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  transition: all 0.3s ease-in-out;
-
-  &.active {
-    background: rgba(0, 0, 0, 0.05);
-  }
+  padding: 15px 70px;
+  margin-bottom: 20px;
 
   .btn {
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    transition: all 0.3s ease;
   }
 
   .title {
-    display: inline-block;
-    font-size: 20px;
+    font-family: var(--font-family);
     font-weight: 400;
+    font-size: 20px;
     line-height: 1.5em;
-    text-align: left;
+    letter-spacing: -0.03em;
   }
 
-  .arrow {
+  .btnArrow {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-right: 3px solid var(--color-black);
-    border-bottom: 3px solid var(--color-black);
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: url("../../../../../../public/about/accordion/accordionArrow.svg")
+      no-repeat center/cover;
+    transition: all 0.3s;
 
-    &.rotated {
-      transform: rotate(225deg);
+    &.open {
+      transform: rotate(180deg);
     }
   }
 
-  .accordionContent {
+  .content {
     height: 0;
-    overflow: hidden;
-    transition: height 0.4s ease, opacity 0.3s ease;
-    opacity: 0;
+    overflow-y: auto;
+    transition: all 0.8s;
+    min-height: 0px;
 
     &.active {
-      height: auto;
-      opacity: 1;
-      padding: 10px 0;
+      padding: 20px 0;
+      min-height: 800px;
     }
   }
 
-  .desc {
-    font-size: 18px;
-    line-height: 1.3em;
-    margin-bottom: 15px;
-    color: var(--color-text);
-    line-height: 1.5;
-  }
+  .imgWrapper {
+    width: 100%;
+    max-width: fit-content;
+    height: auto;
+    overflow: hidden;
+    margin: 30px auto;
 
-  .image {
-    margin-top: 10px;
-    text-align: center;
-
-    img {
+    & img {
       width: 100%;
-      max-width: 500px;
-      height: auto;
-      border-radius: 8px;
+      height: 100%;
+      object-fit: contain;
     }
   }
 
-  .listWithArrow {
-    padding-left: 40px;
-    position: relative;
+  .text,
+  .topicTitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: justify;
+    color: #000;
+    margin-bottom: 20px;
 
-    &::after {
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  .numberedList {
+    list-style: none;
+    counter-reset: my-counter;
+    padding-left: 40px;
+    margin: 15px 0;
+
+    .numberedItem {
+      counter-increment: my-counter;
+      position: relative;
+      margin-bottom: 10px;
+      line-height: 1.5;
+
+      &::before {
+        content: counter(my-counter) ") ";
+        position: absolute;
+        left: -25px;
+        width: 20px;
+        text-align: right;
+        color: var(--color-text);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .dottedItem {
+    position: relative;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: justify;
+    color: #000;
+    margin-bottom: 5px;
+
+    &::before {
       content: "";
       position: absolute;
-      top: 10px;
+      top: 12px;
       left: 0;
-      width: 20px;
-      height: 20px;
+      width: 5px;
+      height: 5px;
+      border-radius: 10px;
       background-color: var(--color-black);
     }
-  }
-
-  .listWithNumbers {
-    padding-left: 40px;
   }
 }
