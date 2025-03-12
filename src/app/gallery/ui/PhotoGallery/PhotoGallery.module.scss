@@ -1,0 +1,92 @@
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: darkgray;
+}
+
+.imgWrapper {
+  cursor: pointer;
+  position: relative;
+  z-index: 90;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 800px;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 3px;
+    width: 32px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.innerImg {
+  width: 100%;
+  height: 400px;
+  overflow-y: hidden;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

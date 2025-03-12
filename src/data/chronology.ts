@@ -2,7 +2,7 @@ export interface IChronologyItem {
   year: number[];
   description: string[];
 }
-
+      
 export const chronologyData: IChronologyItem[] = [
   { 
     year: [1994, 1995],

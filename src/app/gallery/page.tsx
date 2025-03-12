@@ -1,5 +1,6 @@
+"use client";
 import styles from "./page.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import SwiperComponent from "./ui/SwiperComponent/SwiperComponent";
 import gallery1 from "@/public/gallery/1.png";
 import gallery2 from "@/public/gallery/2.png";
@@ -23,8 +24,39 @@ import gallery19 from "@/public/gallery/19.png";
 import gallery20 from "@/public/gallery/20.png";
 import gallery21 from "@/public/gallery/21.png";
 import SecondFooter from "@/src/components/SecondFooter/SecondFooter";
+import PhotoGallery from "./ui/PhotoGallery/PhotoGallery";
+import { useState } from "react";
+
+import firstGallery1 from "@/public/gallery/TheSchoolOfParliamentarism/1.webp";
+import firstGallery2 from "@/public/gallery/TheSchoolOfParliamentarism/2.webp";
+import firstGallery3 from "@/public/gallery/TheSchoolOfParliamentarism/3.webp";
+import firstGallery4 from "@/public/gallery/TheSchoolOfParliamentarism/4.webp";
+
+import secondGallery1 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/1.jpg";
+import secondGallery2 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/2.jpg";
+import secondGallery3 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/3.jpg";
+import secondGallery4 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/4.jpg";
+import secondGallery5 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/5.jpg";
+import secondGallery6 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/6.jpg";
+import secondGallery7 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/7.jpg";
+import secondGallery8 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/8.jpg";
+import secondGallery9 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/9.jpg";
+import secondGallery10 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/10.jpg";
+import secondGallery11 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/11.jpg";
+import secondGallery12 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/12.jpg";
+import secondGallery13 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/13.jpg";
+import secondGallery14 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/14.jpg";
 
 const page = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImages, setSelectedImages] = useState<
+    (string | StaticImageData)[]
+  >([]);
+
+  const openGallery = (images: (string | StaticImageData)[]) => {
+    setSelectedImages(images);
+    setIsOpen(true);
+  };
   return (
     <>
       <section className={styles.gallery}>
@@ -72,16 +104,65 @@ const page = () => {
             </span>
           </a>
           <div className={styles.imagesWrapper}>
-            <a href="#" className={styles.imgWrapper} target="_blank">
-              <Image src={gallery2} alt="" />
-            </a>
-            <a
+            <div
               className={styles.imgWrapper}
-              href="https://drive.google.com/drive/folders/173K8dktG8xiFknv1Ic0lh0G4R1-7jV6R"
-              target="_blank"
+              onClick={() =>
+                openGallery([
+                  firstGallery1,
+                  firstGallery2,
+                  firstGallery3,
+                  firstGallery4,
+                ])
+              }
             >
-              <Image src={gallery3} alt="" />
-            </a>
+              <Image
+                src={gallery2}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
+            </div>
+
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  secondGallery1,
+                  secondGallery2,
+                  secondGallery3,
+                  secondGallery4,
+                  secondGallery5,
+                  secondGallery6,
+                  secondGallery7,
+                  secondGallery8,
+                  secondGallery9,
+                  secondGallery10,
+                  secondGallery11,
+                  secondGallery12,
+                  secondGallery13,
+                  secondGallery14,
+                ])
+              }
+            >
+              <Image
+                src={gallery3}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
+            </div>
           </div>
         </div>
         <div className={styles.wrapper}>
