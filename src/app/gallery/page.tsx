@@ -47,6 +47,36 @@ import secondGallery12 from "@/public/gallery/OrganizationalDeElopmentAndLobbyin
 import secondGallery13 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/13.jpg";
 import secondGallery14 from "@/public/gallery/OrganizationalDeElopmentAndLobbying/14.jpg";
 
+import thirdGallery1 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery2 from "@/public/gallery/SchoolOfLeadership2006_2011/2.webp";
+import thirdGallery3 from "@/public/gallery/SchoolOfLeadership2006_2011/3.webp";
+import thirdGallery4 from "@/public/gallery/SchoolOfLeadership2006_2011/4.webp";
+import thirdGallery5 from "@/public/gallery/SchoolOfLeadership2006_2011/5.webp";
+import thirdGallery6 from "@/public/gallery/SchoolOfLeadership2006_2011/6.webp";
+import thirdGallery7 from "@/public/gallery/SchoolOfLeadership2006_2011/7.webp";
+import thirdGallery8 from "@/public/gallery/SchoolOfLeadership2006_2011/8.webp";
+import thirdGallery9 from "@/public/gallery/SchoolOfLeadership2006_2011/9.webp";
+import thirdGallery10 from "@/public/gallery/SchoolOfLeadership2006_2011/10.webp";
+import thirdGallery11 from "@/public/gallery/SchoolOfLeadership2006_2011/11.webp";
+import thirdGallery12 from "@/public/gallery/SchoolOfLeadership2006_2011/12.webp";
+import thirdGallery13 from "@/public/gallery/SchoolOfLeadership2006_2011/13.webp";
+import thirdGallery14 from "@/public/gallery/SchoolOfLeadership2006_2011/14.webp";
+import thirdGallery15 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery16 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery17 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery18 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery19 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery20 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery21 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery22 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery23 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery24 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery25 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery26 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery27 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery28 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery29 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+
 const page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImages, setSelectedImages] = useState<
@@ -104,17 +134,7 @@ const page = () => {
             </span>
           </a>
           <div className={styles.imagesWrapper}>
-            <div
-              className={styles.imgWrapper}
-              onClick={() =>
-                openGallery([
-                  firstGallery1,
-                  firstGallery2,
-                  firstGallery3,
-                  firstGallery4,
-                ])
-              }
-            >
+            <div className={styles.imgWrapper}>
               <Image
                 src={gallery2}
                 alt="Gallery Image 4"
@@ -129,6 +149,34 @@ const page = () => {
               )}
             </div>
 
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  firstGallery1,
+                  firstGallery2,
+                  firstGallery3,
+                  firstGallery4,
+                ])
+              }
+            >
+              <Image
+                src={gallery3}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
+            </div>
+          </div>
+        </div>
+        <div className={styles.wrapper}>
+          <div className={styles.imagesWrapper}>
             <div
               className={styles.imgWrapper}
               onClick={() =>
@@ -151,7 +199,7 @@ const page = () => {
               }
             >
               <Image
-                src={gallery3}
+                src={gallery4}
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
@@ -163,15 +211,54 @@ const page = () => {
                 />
               )}
             </div>
-          </div>
-        </div>
-        <div className={styles.wrapper}>
-          <div className={styles.imagesWrapper}>
-            <div className={styles.imgWrapper}>
-              <Image src={gallery4} alt="" />
-            </div>
-            <div className={styles.imgWrapper}>
-              <Image src={gallery5} alt="" />
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  thirdGallery1,
+                  thirdGallery2,
+                  thirdGallery3,
+                  thirdGallery4,
+                  thirdGallery5,
+                  thirdGallery6,
+                  thirdGallery7,
+                  thirdGallery8,
+                  thirdGallery9,
+                  thirdGallery10,
+                  thirdGallery11,
+                  thirdGallery12,
+                  thirdGallery13,
+                  thirdGallery14,
+                  thirdGallery15,
+                  thirdGallery16,
+                  thirdGallery17,
+                  thirdGallery18,
+                  thirdGallery19,
+                  thirdGallery20,
+                  thirdGallery21,
+                  thirdGallery22,
+                  thirdGallery23,
+                  thirdGallery24,
+                  thirdGallery25,
+                  thirdGallery26,
+                  thirdGallery27,
+                  thirdGallery28,
+                  thirdGallery29,
+                ])
+              }
+            >
+              <Image
+                src={gallery5}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
             </div>
           </div>
           <a
