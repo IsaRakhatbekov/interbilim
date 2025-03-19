@@ -77,6 +77,66 @@ import thirdGallery27 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp"
 import thirdGallery28 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
 import thirdGallery29 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
 
+import fourthGallery1 from "@/public/gallery/SupportForCivilSocietyActivists/1.webp";
+import fourthGallery2 from "@/public/gallery/SupportForCivilSocietyActivists/2.webp";
+import fourthGallery3 from "@/public/gallery/SupportForCivilSocietyActivists/3.webp";
+import fourthGallery4 from "@/public/gallery/SupportForCivilSocietyActivists/4.webp";
+import fourthGallery5 from "@/public/gallery/SupportForCivilSocietyActivists/5.webp";
+
+import fifthGallery1 from "@/public/gallery/MobileGroupsExplAiningTheConstituTionOf_2010/1.webp";
+import fifthGallery2 from "@/public/gallery/MobileGroupsExplAiningTheConstituTionOf_2010/2.webp";
+import fifthGallery3 from "@/public/gallery/MobileGroupsExplAiningTheConstituTionOf_2010/3.webp";
+
+import sixthGallery1 from "@/public/gallery/young/1.jpg";
+import sixthGallery2 from "@/public/gallery/young/2.jpg";
+import sixthGallery3 from "@/public/gallery/young/3.jpg";
+import sixthGallery4 from "@/public/gallery/young/4.jpg";
+import sixthGallery5 from "@/public/gallery/young/5.jpg";
+import sixthGallery6 from "@/public/gallery/young/6.jpg";
+import sixthGallery7 from "@/public/gallery/young/7.jpg";
+import sixthGallery8 from "@/public/gallery/young/8.jpg";
+import sixthGallery9 from "@/public/gallery/young/9.jpg";
+import sixthGallery10 from "@/public/gallery/young/10.jpg";
+import sixthGallery11 from "@/public/gallery/young/11.jpg";
+import sixthGallery12 from "@/public/gallery/young/12.jpg";
+import sixthGallery13 from "@/public/gallery/young/13.jpg";
+import sixthGallery14 from "@/public/gallery/young/14.jpg";
+import sixthGallery15 from "@/public/gallery/young/15.jpg";
+import sixthGallery16 from "@/public/gallery/young/16.jpg";
+import sixthGallery17 from "@/public/gallery/young/17.jpg";
+import sixthGallery18 from "@/public/gallery/young/18.jpg";
+import sixthGallery19 from "@/public/gallery/young/19.jpg";
+import sixthGallery20 from "@/public/gallery/young/20.jpg";
+import sixthGallery21 from "@/public/gallery/young/21.jpg";
+import sixthGallery22 from "@/public/gallery/young/22.jpg";
+import sixthGallery23 from "@/public/gallery/young/23.jpg";
+import sixthGallery24 from "@/public/gallery/young/24.jpg";
+import sixthGallery25 from "@/public/gallery/young/25.jpg";
+import sixthGallery26 from "@/public/gallery/young/26.jpg";
+import sixthGallery27 from "@/public/gallery/young/27.jpg";
+import sixthGallery28 from "@/public/gallery/young/28.jpg";
+import sixthGallery29 from "@/public/gallery/young/29.jpg";
+import sixthGallery30 from "@/public/gallery/young/30.jpg";
+import sixthGallery31 from "@/public/gallery/young/31.jpg";
+import sixthGallery32 from "@/public/gallery/young/32.jpg";
+import sixthGallery33 from "@/public/gallery/young/33.jpg";
+import sixthGallery34 from "@/public/gallery/young/34.jpg";
+import sixthGallery35 from "@/public/gallery/young/35.jpg";
+import sixthGallery36 from "@/public/gallery/young/36.jpg";
+import sixthGallery37 from "@/public/gallery/young/37.jpg";
+import sixthGallery38 from "@/public/gallery/young/38.jpg";
+import sixthGallery39 from "@/public/gallery/young/39.jpg";
+import sixthGallery40 from "@/public/gallery/young/40.jpg";
+import sixthGallery41 from "@/public/gallery/young/41.jpg";
+import sixthGallery42 from "@/public/gallery/young/42.jpg";
+import sixthGallery43 from "@/public/gallery/young/43.jpg";
+import sixthGallery44 from "@/public/gallery/young/44.jpg";
+import sixthGallery45 from "@/public/gallery/young/45.jpg";
+import sixthGallery46 from "@/public/gallery/young/46.jpg";
+import sixthGallery47 from "@/public/gallery/young/47.jpg";
+import sixthGallery48 from "@/public/gallery/young/48.jpg";
+import sixthGallery49 from "@/public/gallery/young/49.jpg";
+
 const page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImages, setSelectedImages] = useState<
@@ -308,19 +368,126 @@ const page = () => {
             </span>
           </a>
           <div className={styles.imagesWrapper}>
-            <div className={styles.imgWrapper}>
-              <Image src={gallery8} alt="" />
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  fourthGallery1,
+                  fourthGallery2,
+                  fourthGallery3,
+                  fourthGallery4,
+                  fourthGallery5,
+                ])
+              }
+            >
+              <Image
+                src={gallery8}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
             </div>
-            <div className={styles.imgWrapper}>
-              <Image src={gallery9} alt="" />
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([fifthGallery1, fifthGallery2, fifthGallery3])
+              }
+            >
+              <Image
+                src={gallery9}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
             </div>
           </div>
         </div>
         <div className={styles.wrapper}>
           <div className={styles.imagesWrapper}>
-            <div className={styles.imgWrapper}>
-              <Image src={gallery10} alt="" />
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  sixthGallery1,
+                  sixthGallery2,
+                  sixthGallery3,
+                  sixthGallery4,
+                  sixthGallery5,
+                  sixthGallery6,
+                  sixthGallery7,
+                  sixthGallery8,
+                  sixthGallery9,
+                  sixthGallery10,
+                  sixthGallery11,
+                  sixthGallery12,
+                  sixthGallery13,
+                  sixthGallery14,
+                  sixthGallery15,
+                  sixthGallery16,
+                  sixthGallery17,
+                  sixthGallery18,
+                  sixthGallery19,
+                  sixthGallery20,
+                  sixthGallery21,
+                  sixthGallery22,
+                  sixthGallery23,
+                  sixthGallery24,
+                  sixthGallery25,
+                  sixthGallery26,
+                  sixthGallery27,
+                  sixthGallery28,
+                  sixthGallery29,
+                  sixthGallery30,
+                  sixthGallery31,
+                  sixthGallery32,
+                  sixthGallery33,
+                  sixthGallery34,
+                  sixthGallery35,
+                  sixthGallery36,
+                  sixthGallery37,
+                  sixthGallery38,
+                  sixthGallery39,
+                  sixthGallery40,
+                  sixthGallery41,
+                  sixthGallery42,
+                  sixthGallery43,
+                  sixthGallery44,
+                  sixthGallery45,
+                  sixthGallery46,
+                  sixthGallery47,
+                  sixthGallery48,
+                  sixthGallery49,
+                ])
+              }
+            >
+              <Image
+                src={gallery10}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
             </div>
+            {/* <div className={styles.imgWrapper}>
+              <Image src={gallery10} alt="" />
+            </div> */}
             <div className={styles.imgWrapper}>
               <Image src={gallery11} alt="" />
             </div>
