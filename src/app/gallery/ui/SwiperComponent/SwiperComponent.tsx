@@ -1,6 +1,6 @@
 "use client";
-
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import styles from "./SwiperComponent.module.scss";
 import img1 from "@/public/gallery/gallery-swiper-1.png";
 import img2 from "@/public/gallery/gallery-swiper-2.png";
@@ -26,9 +26,17 @@ const SwiperComponent = () => {
   return (
     <div className={styles.swiperContainer}>
       <Swiper
+        modules={[Autoplay]}
+        loop={true}
+        freeMode={true}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        speed={3000}
         slidesPerView={2}
         spaceBetween={10}
-        // loop={true}
         breakpoints={{
           768: {
             slidesPerView: 3,

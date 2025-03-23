@@ -290,7 +290,7 @@ const page = () => {
                 <h4 className={styles.innerTitle}>Социальные сети</h4>
                 <a
                   className={`${styles.socialLinks} ${styles.text}`}
-                  href="https://www.facebook.com/interbilimngo/"
+                  href="https://www.facebook.com/interbilim.osh"
                   target="_blank"
                 >
                   <svg
@@ -336,7 +336,7 @@ const page = () => {
                 </a>
                 <a
                   className={`${styles.socialLinks} ${styles.text}`}
-                  href="https://www.instagram.com/interbilim.kg/"
+                  href="http://instagram.com/interbilimosh/"
                   target="_blank"
                 >
                   <svg
@@ -404,7 +404,7 @@ const page = () => {
                 </a>
                 <a
                   className={`${styles.socialLinks} ${styles.text}`}
-                  href="https://wa.me/996553602375"
+                  href="https://wa.me/996555077764"
                   target="_blank"
                 >
                   <svg

@@ -6,6 +6,7 @@
 
   .swiperWrapper {
     overflow: visible; // Разрешаем видимость слайдов
+    transition-timing-function: linear;
   }
 
   .slide {

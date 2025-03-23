@@ -14,12 +14,6 @@
     z-index: -1;
   }
 
-  .nav {
-    display: flex;
-    gap: 70px;
-    justify-content: space-evenly;
-  }
-
   .logo {
     display: inline-block;
     width: 255px;
@@ -36,7 +30,7 @@
   .list {
     gap: 70px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .item {
@@ -59,6 +53,13 @@
     & .link {
       margin-bottom: 30px;
     }
+  }
+
+  .socialLinksWrapper {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
   }
 }
 

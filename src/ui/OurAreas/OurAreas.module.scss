@@ -120,6 +120,27 @@
     padding: 1rem;
     max-width: 100%;
   }
+  /* Новые стили для временной шкалы и макета */
+  .timeline {
+    display: block; /* Делаем временную шкалу видимой */
+  }
+  .content {
+    display: grid;
+    grid-template-areas:
+      "tl cl"
+      "tl cr";
+    grid-template-columns: 50px 1fr; /* Настраиваем ширину временной шкалы */
+  }
+  .timeline {
+    grid-area: tl;
+  }
+  .columnLeft {
+    grid-area: cl;
+  }
+  .columnRight {
+    grid-area: cr;
+    margin-top: 0; /* Убираем дефолтный отступ */
+  }
 }
 
 @media (max-width: 991px) {
@@ -141,6 +162,8 @@
 @media (max-width: 768px) {
   .ourAreas {
     padding: 50px 0 150px;
+
+    background: url("../../../public/areaBg.png") left/cover no-repeat;
   }
   .title {
     font-size: 3rem;

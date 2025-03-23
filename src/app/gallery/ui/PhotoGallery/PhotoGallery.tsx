@@ -2,11 +2,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Image, { StaticImageData } from "next/image";
-import styles from "./PhotoGallery.module.scss";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import styles from "./PhotoGallery.module.scss";
 
 interface PhotoGalleryProps {
   images: (string | StaticImageData)[];

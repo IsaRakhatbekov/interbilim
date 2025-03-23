@@ -3,9 +3,20 @@
   padding: 300px 0 0;
   color: var(--color-white);
   // background-color: #f3f0e9;
-  background: url("../../../public/interbilim/interbilimBg.png") no-repeat
-    top/cover;
+
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../../../public/interbilim/interbilimBg.png") no-repeat
+      top/contain;
+    top: 15%;
+    left: 0;
+    z-index: -1;
+  }
 
   .values {
     width: 100%;
@@ -103,7 +114,7 @@
 
   .reviews {
     position: relative;
-    bottom: -200px;
+    bottom: -120px;
     z-index: 10;
 
     .reviewsTitle {

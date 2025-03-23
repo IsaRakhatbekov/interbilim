@@ -137,6 +137,66 @@ import sixthGallery47 from "@/public/gallery/young/47.jpg";
 import sixthGallery48 from "@/public/gallery/young/48.jpg";
 import sixthGallery49 from "@/public/gallery/young/49.jpg";
 
+import seventhGaller1 from "@/public/gallery/PassportToSuccess/1.webp";
+import seventhGaller2 from "@/public/gallery/PassportToSuccess/2.webp";
+import seventhGaller3 from "@/public/gallery/PassportToSuccess/3.webp";
+import seventhGaller4 from "@/public/gallery/PassportToSuccess/4.webp";
+import seventhGaller5 from "@/public/gallery/PassportToSuccess/5.webp";
+import seventhGaller6 from "@/public/gallery/PassportToSuccess/6.webp";
+import seventhGaller7 from "@/public/gallery/PassportToSuccess/7.webp";
+import seventhGaller8 from "@/public/gallery/PassportToSuccess/8.webp";
+import seventhGaller9 from "@/public/gallery/PassportToSuccess/9.webp";
+import seventhGaller10 from "@/public/gallery/PassportToSuccess/10.webp";
+import seventhGaller11 from "@/public/gallery/PassportToSuccess/11.webp";
+import seventhGaller12 from "@/public/gallery/PassportToSuccess/12.webp";
+import seventhGaller13 from "@/public/gallery/PassportToSuccess/13.webp";
+import seventhGaller14 from "@/public/gallery/PassportToSuccess/14.webp";
+import seventhGaller15 from "@/public/gallery/PassportToSuccess/15.webp";
+import seventhGaller16 from "@/public/gallery/PassportToSuccess/16.webp";
+
+import eighthGallery1 from "@/public/gallery/DemocracyCampInTheChuiRegion/1.webp";
+import eighthGallery2 from "@/public/gallery/DemocracyCampInTheChuiRegion/2.webp";
+import eighthGallery3 from "@/public/gallery/DemocracyCampInTheChuiRegion/3.webp";
+import eighthGallery4 from "@/public/gallery/DemocracyCampInTheChuiRegion/4.webp";
+import eighthGallery5 from "@/public/gallery/DemocracyCampInTheChuiRegion/5.webp";
+import eighthGallery6 from "@/public/gallery/DemocracyCampInTheChuiRegion/6.webp";
+import eighthGallery7 from "@/public/gallery/DemocracyCampInTheChuiRegion/7.webp";
+import eighthGallery8 from "@/public/gallery/DemocracyCampInTheChuiRegion/8.webp";
+import eighthGallery9 from "@/public/gallery/DemocracyCampInTheChuiRegion/9.webp";
+
+import ninthGAllery1 from "@/public/gallery/DemocracyAndYouth/1.webp";
+import ninthGAllery2 from "@/public/gallery/DemocracyAndYouth/2.webp";
+import ninthGAllery3 from "@/public/gallery/DemocracyAndYouth/3.webp";
+import ninthGAllery4 from "@/public/gallery/DemocracyAndYouth/4.webp";
+import ninthGAllery5 from "@/public/gallery/DemocracyAndYouth/5.webp";
+import ninthGAllery6 from "@/public/gallery/DemocracyAndYouth/6.webp";
+import ninthGAllery7 from "@/public/gallery/DemocracyAndYouth/7.webp";
+import ninthGAllery8 from "@/public/gallery/DemocracyAndYouth/8.webp";
+import ninthGAllery9 from "@/public/gallery/DemocracyAndYouth/9.webp";
+import ninthGAllery10 from "@/public/gallery/DemocracyAndYouth/10.webp";
+import ninthGAllery11 from "@/public/gallery/DemocracyAndYouth/11.webp";
+import ninthGAllery12 from "@/public/gallery/DemocracyAndYouth/12.webp";
+import ninthGAllery13 from "@/public/gallery/DemocracyAndYouth/13.webp";
+import ninthGAllery14 from "@/public/gallery/DemocracyAndYouth/14.webp";
+import ninthGAllery15 from "@/public/gallery/DemocracyAndYouth/15.webp";
+import ninthGAllery16 from "@/public/gallery/DemocracyAndYouth/16.webp";
+import ninthGAllery17 from "@/public/gallery/DemocracyAndYouth/17.webp";
+import ninthGAllery18 from "@/public/gallery/DemocracyAndYouth/18.webp";
+import ninthGAllery19 from "@/public/gallery/DemocracyAndYouth/19.webp";
+import ninthGAllery20 from "@/public/gallery/DemocracyAndYouth/20.webp";
+import ninthGAllery21 from "@/public/gallery/DemocracyAndYouth/21.webp";
+import ninthGAllery22 from "@/public/gallery/DemocracyAndYouth/22.webp";
+import ninthGAllery23 from "@/public/gallery/DemocracyAndYouth/23.webp";
+import ninthGAllery24 from "@/public/gallery/DemocracyAndYouth/24.webp";
+import ninthGAllery25 from "@/public/gallery/DemocracyAndYouth/25.webp";
+import ninthGAllery26 from "@/public/gallery/DemocracyAndYouth/26.webp";
+import ninthGAllery27 from "@/public/gallery/DemocracyAndYouth/27.webp";
+import ninthGAllery28 from "@/public/gallery/DemocracyAndYouth/28.webp";
+import ninthGAllery29 from "@/public/gallery/DemocracyAndYouth/29.webp";
+import ninthGAllery30 from "@/public/gallery/DemocracyAndYouth/30.webp";
+import ninthGAllery31 from "@/public/gallery/DemocracyAndYouth/31.webp";
+import ninthGAllery32 from "@/public/gallery/DemocracyAndYouth/32.webp";
+
 const page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImages, setSelectedImages] = useState<
@@ -485,11 +545,41 @@ const page = () => {
                 />
               )}
             </div>
-            {/* <div className={styles.imgWrapper}>
-              <Image src={gallery10} alt="" />
-            </div> */}
-            <div className={styles.imgWrapper}>
-              <Image src={gallery11} alt="" />
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  seventhGaller1,
+                  seventhGaller2,
+                  seventhGaller3,
+                  seventhGaller4,
+                  seventhGaller5,
+                  seventhGaller6,
+                  seventhGaller7,
+                  seventhGaller8,
+                  seventhGaller9,
+                  seventhGaller10,
+                  seventhGaller11,
+                  seventhGaller12,
+                  seventhGaller13,
+                  seventhGaller14,
+                  seventhGaller15,
+                  seventhGaller16,
+                ])
+              }
+            >
+              <Image
+                src={gallery11}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
             </div>
           </div>
           <a
@@ -539,19 +629,116 @@ const page = () => {
             </span>
           </a>
           <div className={styles.imagesWrapper}>
-            <div className={styles.imgWrapper}>
-              <Image src={gallery14} alt="" />
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  eighthGallery1,
+                  eighthGallery2,
+                  eighthGallery3,
+                  eighthGallery4,
+                  eighthGallery5,
+                  eighthGallery6,
+                  eighthGallery7,
+                  eighthGallery8,
+                  eighthGallery9,
+                ])
+              }
+            >
+              <Image
+                src={gallery14}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
             </div>
-            <div className={styles.imgWrapper}>
-              <Image src={gallery15} alt="" />
+
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  ninthGAllery1,
+                  ninthGAllery2,
+                  ninthGAllery3,
+                  ninthGAllery4,
+                  ninthGAllery5,
+                  ninthGAllery6,
+                  ninthGAllery7,
+                  ninthGAllery8,
+                  ninthGAllery9,
+                  ninthGAllery10,
+                  ninthGAllery11,
+                  ninthGAllery12,
+                  ninthGAllery13,
+                  ninthGAllery14,
+                  ninthGAllery15,
+                  ninthGAllery16,
+                  ninthGAllery17,
+                  ninthGAllery18,
+                  ninthGAllery19,
+                  ninthGAllery20,
+                  ninthGAllery21,
+                  ninthGAllery22,
+                  ninthGAllery23,
+                  ninthGAllery24,
+                  ninthGAllery25,
+                  ninthGAllery26,
+                  ninthGAllery27,
+                  ninthGAllery28,
+                  ninthGAllery29,
+                  ninthGAllery30,
+                  ninthGAllery31,
+                  ninthGAllery32,
+                ])
+              }
+            >
+              <Image
+                src={gallery15}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
             </div>
           </div>
         </div>
         <div className={styles.wrapper}>
           <div className={styles.imagesWrapper}>
-            <div className={styles.imgWrapper}>
-              <Image src={gallery16} alt="" />
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  // HERE NEED TO CONTINUE
+                ])
+              }
+            >
+              <Image
+                src={gallery16}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
             </div>
+            {/* <div className={styles.imgWrapper}>
+              <Image src={gallery16} alt="" />
+            </div> */}
             <div className={styles.imgWrapper}>
               <Image src={gallery17} alt="" />
             </div>

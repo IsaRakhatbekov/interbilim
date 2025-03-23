@@ -107,11 +107,11 @@
     }
 
     .second {
-      top: 36.5%;
+      top: 22.5%;
     }
 
     .third {
-      bottom: 27%;
+      bottom: 31%;
     }
   }
 
@@ -171,7 +171,7 @@
 
     .line {
       .second {
-        top: 28%;
+        top: 21%;
       }
     }
   }
@@ -210,11 +210,21 @@
 
     .line {
       .second {
-        top: 23%;
+        top: 19%;
       }
 
       .third {
         bottom: 32%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .cooperation {
+    .line {
+      .second {
+        top: 15.5%;
       }
     }
   }
@@ -264,6 +274,15 @@
 
     .donationImgWrapperSecond {
       margin: 0 auto;
+    }
+    .line {
+      .second {
+        top: 37.5%;
+      }
+
+      .third {
+        bottom: 30%;
+      }
     }
   }
 }
