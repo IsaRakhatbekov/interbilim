@@ -6,7 +6,6 @@ import img1 from "@/public/gallery/gallery-swiper-1.png";
 import img2 from "@/public/gallery/gallery-swiper-2.png";
 import img3 from "@/public/gallery/gallery-swiper-3.png";
 import img4 from "@/public/gallery/gallery-swiper-4.png";
-import img5 from "@/public/gallery/gallery-swiper-5.png";
 import img6 from "@/public/gallery/gallery-swiper-6.png";
 import img7 from "@/public/gallery/gallery-swiper-7.png";
 import img8 from "@/public/gallery/gallery-swiper-8.png";
@@ -65,11 +64,6 @@ const SwiperComponent = () => {
         <SwiperSlide>
           <div className={styles.slide}>
             <Image src={img4} alt="#" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={styles.slide}>
-            <Image src={img5} alt="#" />
           </div>
         </SwiperSlide>
         <SwiperSlide>

@@ -197,6 +197,81 @@ import ninthGAllery30 from "@/public/gallery/DemocracyAndYouth/30.webp";
 import ninthGAllery31 from "@/public/gallery/DemocracyAndYouth/31.webp";
 import ninthGAllery32 from "@/public/gallery/DemocracyAndYouth/32.webp";
 
+import tenthGallery1 from "@/public/gallery/projects/1.webp";
+import tenthGallery2 from "@/public/gallery/projects/2.webp";
+import tenthGallery3 from "@/public/gallery/projects/3.webp";
+import tenthGallery4 from "@/public/gallery/projects/4.webp";
+import tenthGallery5 from "@/public/gallery/projects/5.webp";
+import tenthGallery6 from "@/public/gallery/projects/6.webp";
+import tenthGallery7 from "@/public/gallery/projects/7.webp";
+import tenthGallery8 from "@/public/gallery/projects/8.webp";
+import tenthGallery9 from "@/public/gallery/projects/9.webp";
+import tenthGallery10 from "@/public/gallery/projects/10.webp";
+import tenthGallery11 from "@/public/gallery/projects/11.webp";
+import tenthGallery12 from "@/public/gallery/projects/12.webp";
+import tenthGallery13 from "@/public/gallery/projects/13.webp";
+import tenthGallery14 from "@/public/gallery/projects/14.webp";
+import tenthGallery15 from "@/public/gallery/projects/15.webp";
+import tenthGallery16 from "@/public/gallery/projects/16.webp";
+import tenthGallery17 from "@/public/gallery/projects/17.webp";
+import tenthGallery18 from "@/public/gallery/projects/18.webp";
+import tenthGallery19 from "@/public/gallery/projects/19.webp";
+import tenthGallery20 from "@/public/gallery/projects/20.webp";
+import tenthGallery21 from "@/public/gallery/projects/21.webp";
+import tenthGallery22 from "@/public/gallery/projects/22.webp";
+import tenthGallery23 from "@/public/gallery/projects/23.webp";
+import tenthGallery24 from "@/public/gallery/projects/24.webp";
+import tenthGallery25 from "@/public/gallery/projects/25.webp";
+import tenthGallery26 from "@/public/gallery/projects/26.webp";
+import tenthGallery27 from "@/public/gallery/projects/27.webp";
+import tenthGallery28 from "@/public/gallery/projects/28.webp";
+import tenthGallery29 from "@/public/gallery/projects/29.webp";
+import tenthGallery30 from "@/public/gallery/projects/30.webp";
+import tenthGallery31 from "@/public/gallery/projects/31.webp";
+import tenthGallery32 from "@/public/gallery/projects/32.webp";
+import tenthGallery33 from "@/public/gallery/projects/33.webp";
+import tenthGallery34 from "@/public/gallery/projects/34.webp";
+import tenthGallery35 from "@/public/gallery/projects/35.webp";
+import tenthGallery36 from "@/public/gallery/projects/36.webp";
+import tenthGallery37 from "@/public/gallery/projects/37.webp";
+import tenthGallery38 from "@/public/gallery/projects/38.webp";
+import tenthGallery39 from "@/public/gallery/projects/39.webp";
+import tenthGallery40 from "@/public/gallery/projects/40.webp";
+import tenthGallery41 from "@/public/gallery/projects/41.webp";
+import tenthGallery42 from "@/public/gallery/projects/42.webp";
+import tenthGallery43 from "@/public/gallery/projects/43.webp";
+import tenthGallery44 from "@/public/gallery/projects/44.webp";
+import tenthGallery45 from "@/public/gallery/projects/45.webp";
+import tenthGallery46 from "@/public/gallery/projects/46.webp";
+import tenthGallery47 from "@/public/gallery/projects/47.webp";
+import tenthGallery48 from "@/public/gallery/projects/48.webp";
+import tenthGallery49 from "@/public/gallery/projects/49.webp";
+import tenthGallery50 from "@/public/gallery/projects/50.webp";
+import tenthGallery51 from "@/public/gallery/projects/51.webp";
+import tenthGallery52 from "@/public/gallery/projects/52.webp";
+import tenthGallery53 from "@/public/gallery/projects/53.webp";
+
+import eleventhGallery1 from "@/public/gallery/differentPhotos/1.webp";
+import eleventhGallery2 from "@/public/gallery/differentPhotos/2.webp";
+import eleventhGallery3 from "@/public/gallery/differentPhotos/3.webp";
+import eleventhGallery4 from "@/public/gallery/differentPhotos/4.webp";
+import eleventhGallery5 from "@/public/gallery/differentPhotos/5.webp";
+import eleventhGallery6 from "@/public/gallery/differentPhotos/6.webp";
+import eleventhGallery7 from "@/public/gallery/differentPhotos/7.webp";
+import eleventhGallery8 from "@/public/gallery/differentPhotos/8.webp";
+import eleventhGallery9 from "@/public/gallery/differentPhotos/9.webp";
+import eleventhGallery10 from "@/public/gallery/differentPhotos/10.webp";
+import eleventhGallery11 from "@/public/gallery/differentPhotos/11.webp";
+import eleventhGallery12 from "@/public/gallery/differentPhotos/12.webp";
+import eleventhGallery13 from "@/public/gallery/differentPhotos/13.webp";
+import eleventhGallery14 from "@/public/gallery/differentPhotos/14.webp";
+import eleventhGallery15 from "@/public/gallery/differentPhotos/15.webp";
+import eleventhGallery16 from "@/public/gallery/differentPhotos/16.webp";
+import eleventhGallery17 from "@/public/gallery/differentPhotos/17.webp";
+import eleventhGallery18 from "@/public/gallery/differentPhotos/18.webp";
+import eleventhGallery19 from "@/public/gallery/differentPhotos/19.webp";
+import eleventhGallery20 from "@/public/gallery/differentPhotos/20.webp";
+
 const page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImages, setSelectedImages] = useState<
@@ -237,7 +312,7 @@ const page = () => {
             className={styles.videoWrapper}
             href="https://www.youtube.com/watch?v=i_kDgVxHNSc"
           >
-            <Image src={gallery1} alt="" />
+            <Image src={gallery1} alt="" loading="lazy" />
             <span className={styles.play}>
               <svg
                 width="34"
@@ -260,6 +335,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -285,6 +361,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -323,6 +400,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -372,6 +450,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -387,7 +466,7 @@ const page = () => {
             className={styles.videoWrapper}
             href="https://www.youtube.com/watch?v=QY3O26Jj83o"
           >
-            <Image src={gallery6} alt="" />
+            <Image src={gallery6} alt="" loading="lazy" />
             <span className={styles.play}>
               <svg
                 width="34"
@@ -411,7 +490,7 @@ const page = () => {
             className={styles.videoWrapper}
             href="https://www.youtube.com/watch?v=qDZa0r0w_yc"
           >
-            <Image src={gallery7} alt="" />
+            <Image src={gallery7} alt="" loading="lazy" />
             <span className={styles.play}>
               <svg
                 width="34"
@@ -445,6 +524,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -464,6 +544,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -537,6 +618,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -573,6 +655,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -588,7 +671,7 @@ const page = () => {
             className={styles.videoWrapper}
             href="https://www.youtube.com/watch?v=z11UnYDROTg"
           >
-            <Image src={gallery12} alt="" />
+            <Image src={gallery12} alt="" loading="lazy" />
             <span className={styles.play}>
               <svg
                 width="34"
@@ -612,7 +695,7 @@ const page = () => {
             className={styles.videoWrapper}
             href="https://www.youtube.com/watch?v=0YR1FA6k4-8"
           >
-            <Image src={gallery13} alt="" />
+            <Image src={gallery13} alt="" loading="lazy" />
             <span className={styles.play}>
               <svg
                 width="34"
@@ -650,6 +733,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -703,6 +787,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -719,7 +804,59 @@ const page = () => {
               className={styles.imgWrapper}
               onClick={() =>
                 openGallery([
-                  // HERE NEED TO CONTINUE
+                  tenthGallery1,
+                  tenthGallery2,
+                  tenthGallery3,
+                  tenthGallery4,
+                  tenthGallery5,
+                  tenthGallery6,
+                  tenthGallery7,
+                  tenthGallery8,
+                  tenthGallery9,
+                  tenthGallery10,
+                  tenthGallery11,
+                  tenthGallery12,
+                  tenthGallery13,
+                  tenthGallery14,
+                  tenthGallery15,
+                  tenthGallery16,
+                  tenthGallery17,
+                  tenthGallery18,
+                  tenthGallery19,
+                  tenthGallery20,
+                  tenthGallery21,
+                  tenthGallery22,
+                  tenthGallery23,
+                  tenthGallery24,
+                  tenthGallery25,
+                  tenthGallery26,
+                  tenthGallery27,
+                  tenthGallery28,
+                  tenthGallery29,
+                  tenthGallery30,
+                  tenthGallery31,
+                  tenthGallery32,
+                  tenthGallery33,
+                  tenthGallery34,
+                  tenthGallery35,
+                  tenthGallery36,
+                  tenthGallery37,
+                  tenthGallery38,
+                  tenthGallery39,
+                  tenthGallery40,
+                  tenthGallery41,
+                  tenthGallery42,
+                  tenthGallery43,
+                  tenthGallery44,
+                  tenthGallery45,
+                  tenthGallery46,
+                  tenthGallery47,
+                  tenthGallery48,
+                  tenthGallery49,
+                  tenthGallery50,
+                  tenthGallery51,
+                  tenthGallery52,
+                  tenthGallery53,
                 ])
               }
             >
@@ -728,6 +865,7 @@ const page = () => {
                 alt="Gallery Image 4"
                 width={300}
                 height={200}
+                loading="lazy"
               />
               {isOpen && (
                 <PhotoGallery
@@ -736,11 +874,47 @@ const page = () => {
                 />
               )}
             </div>
-            {/* <div className={styles.imgWrapper}>
-              <Image src={gallery16} alt="" />
-            </div> */}
-            <div className={styles.imgWrapper}>
-              <Image src={gallery17} alt="" />
+
+            <div
+              className={styles.imgWrapper}
+              onClick={() =>
+                openGallery([
+                  eleventhGallery1,
+                  eleventhGallery2,
+                  eleventhGallery3,
+                  eleventhGallery4,
+                  eleventhGallery5,
+                  eleventhGallery6,
+                  eleventhGallery7,
+                  eleventhGallery8,
+                  eleventhGallery9,
+                  eleventhGallery10,
+                  eleventhGallery11,
+                  eleventhGallery12,
+                  eleventhGallery13,
+                  eleventhGallery14,
+                  eleventhGallery15,
+                  eleventhGallery16,
+                  eleventhGallery17,
+                  eleventhGallery18,
+                  eleventhGallery19,
+                  eleventhGallery20,
+                ])
+              }
+            >
+              <Image
+                src={gallery17}
+                alt="Gallery Image 4"
+                width={300}
+                height={200}
+                loading="lazy"
+              />
+              {isOpen && (
+                <PhotoGallery
+                  images={selectedImages}
+                  closeGallery={() => setIsOpen(false)}
+                />
+              )}
             </div>
           </div>
           <a
@@ -749,7 +923,7 @@ const page = () => {
             className={styles.videoWrapper}
             href="https://www.youtube.com/watch?v=z11UnYDROTg"
           >
-            <Image src={gallery18} alt="" />
+            <Image src={gallery18} alt="" loading="lazy" />
             <span className={styles.play}>
               <svg
                 width="34"
@@ -773,7 +947,7 @@ const page = () => {
             className={styles.videoWrapper}
             href="https://www.youtube.com/watch?v=0YR1FA6k4-8"
           >
-            <Image src={gallery19} alt="" />
+            <Image src={gallery19} alt="" loading="lazy" />
             <span className={styles.play}>
               <svg
                 width="34"
@@ -791,10 +965,10 @@ const page = () => {
           </a>
           <div className={styles.imagesWrapper}>
             <div className={styles.imgWrapper}>
-              <Image src={gallery20} alt="" />
+              <Image src={gallery20} alt="" loading="lazy" />
             </div>
             <div className={styles.imgWrapper}>
-              <Image src={gallery21} alt="" />
+              <Image src={gallery21} alt="" loading="lazy" />
             </div>
           </div>
         </div>
