@@ -5,8 +5,8 @@ import values2 from "@/public/interbilim/values2.png";
 import values3 from "@/public/interbilim/values3.png";
 import reviews1 from "@/public/interbilim/reviews1.png";
 import reviews2 from "@/public/interbilim/reviews2.png";
-import reviews3 from "@/public/interbilim/reviews3.jpg";
-import reviews4 from "@/public/interbilim/reviews4.jpg";
+import reviews3 from "@/public/interbilim/reviews3.png";
+import reviews4 from "@/public/interbilim/reviews4.png";
 import reviews5 from "@/public/interbilim/reviews5.png";
 import reviews6 from "@/public/interbilim/reviews6.png";
 import reviews7 from "@/public/interbilim/reviews7.png";
@@ -227,9 +227,9 @@ const Interbilim = () => {
                 <div className={styles.reviewsCard}>
                   <div className={styles.reviewsImageWrapper}>
                     <div className={styles.reviewsImgWrapper}>
-                      <Image src={reviews3} alt="" />
+                      <Image src={reviews3} alt="Карим Ва- Ахунов" />
                     </div>
-                    <h5 className={styles.reviewsName}>name</h5>
+                    <h5 className={styles.reviewsName}>Карим Ва- Ахунов</h5>
                   </div>
                   <div className={styles.reviewsContent}>
                     <p className={styles.reviewsText}>
@@ -248,9 +248,7 @@ const Interbilim = () => {
                     <div className={styles.reviewsImgWrapper}>
                       <Image src={reviews4} alt="" />
                     </div>
-                    <h5 className={styles.reviewsName}>
-                      Ыдырыс Исаков, журналист.
-                    </h5>
+                    <h5 className={styles.reviewsName}>Ыдырыс Исаков</h5>
                   </div>
                   <div className={styles.reviewsContent}>
                     <p className={styles.reviewsText}>
