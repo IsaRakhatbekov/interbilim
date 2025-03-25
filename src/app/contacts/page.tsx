@@ -55,7 +55,7 @@ const page = () => {
                   href="https://interbilim.kg"
                   target="_blank"
                 >
-                  https://interbilim.kg.kg
+                  https://interbilim.kg
                 </a>
               </li>
               <li className={`${styles.socialWrapper} ${styles.item}`}>
@@ -280,10 +280,10 @@ const page = () => {
                 <h4 className={styles.innerTitle}>Веб-страница</h4>
                 <a
                   className={`${styles.address} ${styles.text}`}
-                  href="https://interbilim.kg"
+                  href="https://www.interbilimosh.kg/"
                   target="_blank"
                 >
-                  https://interbilim.kg.kg
+                  https://www.interbilimosh.kg
                 </a>
               </li>
               <li className={`${styles.socialWrapper} ${styles.item}`}>

@@ -61,21 +61,20 @@ import thirdGallery11 from "@/public/gallery/SchoolOfLeadership2006_2011/11.webp
 import thirdGallery12 from "@/public/gallery/SchoolOfLeadership2006_2011/12.webp";
 import thirdGallery13 from "@/public/gallery/SchoolOfLeadership2006_2011/13.webp";
 import thirdGallery14 from "@/public/gallery/SchoolOfLeadership2006_2011/14.webp";
-import thirdGallery15 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery16 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery17 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery18 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery19 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery20 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery21 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery22 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery23 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery24 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery25 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery26 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery27 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery28 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
-import thirdGallery29 from "@/public/gallery/SchoolOfLeadership2006_2011/1.webp";
+import thirdGallery15 from "@/public/gallery/SchoolOfLeadership2006_2011/15.webp";
+import thirdGallery16 from "@/public/gallery/SchoolOfLeadership2006_2011/16.webp";
+import thirdGallery17 from "@/public/gallery/SchoolOfLeadership2006_2011/17.webp";
+import thirdGallery18 from "@/public/gallery/SchoolOfLeadership2006_2011/18.webp";
+import thirdGallery19 from "@/public/gallery/SchoolOfLeadership2006_2011/19.webp";
+import thirdGallery21 from "@/public/gallery/SchoolOfLeadership2006_2011/21.webp";
+import thirdGallery22 from "@/public/gallery/SchoolOfLeadership2006_2011/22.webp";
+import thirdGallery23 from "@/public/gallery/SchoolOfLeadership2006_2011/23.webp";
+import thirdGallery24 from "@/public/gallery/SchoolOfLeadership2006_2011/24.webp";
+import thirdGallery25 from "@/public/gallery/SchoolOfLeadership2006_2011/25.webp";
+import thirdGallery26 from "@/public/gallery/SchoolOfLeadership2006_2011/26.webp";
+import thirdGallery27 from "@/public/gallery/SchoolOfLeadership2006_2011/27.webp";
+import thirdGallery28 from "@/public/gallery/SchoolOfLeadership2006_2011/28.webp";
+import thirdGallery29 from "@/public/gallery/SchoolOfLeadership2006_2011/29.webp";
 
 import fourthGallery1 from "@/public/gallery/SupportForCivilSocietyActivists/1.webp";
 import fourthGallery2 from "@/public/gallery/SupportForCivilSocietyActivists/2.webp";
@@ -432,7 +431,6 @@ const page = () => {
                   thirdGallery17,
                   thirdGallery18,
                   thirdGallery19,
-                  thirdGallery20,
                   thirdGallery21,
                   thirdGallery22,
                   thirdGallery23,

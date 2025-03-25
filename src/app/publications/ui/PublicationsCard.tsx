@@ -12,20 +12,11 @@ const PublicationsCard: React.FC<IPublicationsCard> = ({
   image,
   link,
 }) => {
-  const getDownloadLink = (originalLink: string) => {
-    // Извлекаем ID файла из Google Drive ссылки
-    const match = originalLink.match(/file\/d\/([^\/]+)/);
-    if (match) {
-      // Формируем прямую ссылку для скачивания
-      return `https://drive.google.com/uc?id=${match[1]}&export=download`;
-    }
-    return originalLink;
-  };
-
   return (
     <a
-      href={getDownloadLink(link)}
+      href={link} // Оставляем оригинальную ссылку
       className={styles.card}
+      // target="_blank" // Открываем в новой вкладке
       rel="noopener noreferrer"
     >
       <div className={styles.imgWrapper}>

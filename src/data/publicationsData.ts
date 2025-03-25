@@ -32,7 +32,7 @@ const publicationsCard: { left: IPublicationsCard[], middle: IPublicationsCard[]
     {
       image: '/certificates/certificates6.png',
       title: 'О  НКО секторе Кыргызстана',
-      link: "https://drive.google.com/drive/folders/16TwxcRMMI3A8k1C3uJFi88kOMbjPO8ds"
+      link: "https://drive.google.com/file/d/1idqVDE31az0lJ8K_RBr4OtePrgv4eiMC/view?usp=drive_link"
     },
     {
       image: '/certificates/certificates7.png',
