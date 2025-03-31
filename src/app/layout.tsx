@@ -3,6 +3,22 @@ import "../global/_reset.scss";
 import "../global/global.scss";
 import Header from "../components/Header/Header";
 
+const openSans = localFont({
+  src: [
+    {
+      path: "../global/fonts/OpenSans-Italic.woff",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../global/fonts/OpenSans-Italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+  ],
+  variable: "--font-open-sans-italic",
+});
+
 const averia = localFont({
   src: [
     {
@@ -119,7 +135,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body
-        className={`${averia.variable} ${inter.variable} ${oswald.variable} ${zenMaru.variable}`}
+        className={`${averia.variable} ${inter.variable} ${oswald.variable} ${zenMaru.variable} ${openSans.variable}`}
       >
         <div className=".page-wrapper">
           <Header />

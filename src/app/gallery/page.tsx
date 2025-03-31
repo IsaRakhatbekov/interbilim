@@ -462,7 +462,7 @@ const page = () => {
             target="_blank"
             rel="noreferrer"
             className={styles.videoWrapper}
-            href="https://www.youtube.com/watch?v=QY3O26Jj83o"
+            href="https://www.youtube.com/watch?v=2Fe_ZwZe6tg"
           >
             <Image src={gallery6} alt="" loading="lazy" />
             <span className={styles.play}>
@@ -486,7 +486,7 @@ const page = () => {
             target="_blank"
             rel="noreferrer"
             className={styles.videoWrapper}
-            href="https://www.youtube.com/watch?v=qDZa0r0w_yc"
+            href="https://www.youtube.com/watch?v=z11UnYDROTg"
           >
             <Image src={gallery7} alt="" loading="lazy" />
             <span className={styles.play}>
@@ -667,7 +667,7 @@ const page = () => {
             target="_blank"
             rel="noreferrer"
             className={styles.videoWrapper}
-            href="https://www.youtube.com/watch?v=z11UnYDROTg"
+            href="https://www.youtube.com/watch?v=qDZa0r0w_yc"
           >
             <Image src={gallery12} alt="" loading="lazy" />
             <span className={styles.play}>
@@ -919,7 +919,7 @@ const page = () => {
             target="_blank"
             rel="noreferrer"
             className={styles.videoWrapper}
-            href="https://www.youtube.com/watch?v=z11UnYDROTg"
+            href="https://www.youtube.com/watch?v=gg5dSytDSj8&t=152s"
           >
             <Image src={gallery18} alt="" loading="lazy" />
             <span className={styles.play}>
@@ -943,7 +943,7 @@ const page = () => {
             target="_blank"
             rel="noreferrer"
             className={styles.videoWrapper}
-            href="https://www.youtube.com/watch?v=0YR1FA6k4-8"
+            href="https://www.youtube.com/watch?v=QY3O26Jj83o"
           >
             <Image src={gallery19} alt="" loading="lazy" />
             <span className={styles.play}>

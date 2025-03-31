@@ -113,16 +113,20 @@
     opacity: 0;
     transition: opacity 2.9s, transform 1.5s;
     z-index: -1;
-    font-family: var(--font-averia), sans-serif;
+    font-style: italic;
+    font-family: var(--font-open-sans-italic);
 
     & span {
       color: var(--color-red);
+      font-family: var(--font-open-sans-italic);
     }
   }
 
   .heroTitleActive {
     opacity: 1;
     transform: translateX(0%);
+    font-style: italic;
+    font-family: var(--font-open-sans-italic);
   }
 
   .seondTitle {
